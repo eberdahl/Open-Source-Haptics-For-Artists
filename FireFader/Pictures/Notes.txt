@@ -1,0 +1,1 @@
+These pictures are for a FireFader containing only one motorized fader.  I used a pair of diodes so that one lamp would light up for a force in one direction, and the other lamp would light up for a force in the other direction.

@@ -1,0 +1,53 @@
+#N canvas 521 187 839 559 16;
+#X obj -11 473 block~ 1;
+#X obj 571 94 delwrite~ #0d2 1;
+#X obj 571 121 delread~ #0d2 0;
+#X obj -30 88 delwrite~ #0d1 1;
+#X obj -29 115 delread~ #0d1 0;
+#N canvas 148 53 243 182 sample-for-GUI 0;
+#X obj 135 38 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 135 9 loadbang;
+#X obj 10 145 outlet;
+#X obj 10 114 snapshot~;
+#X obj 9 37 inlet~;
+#X obj 135 59 metro 100;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X restore -28 227 pd sample-for-GUI;
+#X obj -25 256 hsl 128 15 -0.04 0.04 0 0 empty empty empty -2 -8 0
+10 -262144 -1 -1 8458 1;
+#X obj 571 148 grnd~ g 0;
+#X floatatom -28 298 7 0 0 0 - - -;
+#X text 34 269 ^;
+#X obj -29 143 FireFader~;
+#X text -31 443 Edgar Berdahl;
+#X text 148 8 The haptic device is connected to ground ''wall'' g by
+contact~ link c \, which consists of a spring with stiffness 300 N/m
+and a damper with coefficient 1 that engages once the force stick is
+pushed to the right beyond the zero postion.;
+#X obj 649 366 grnd~ g 0;
+#X obj 649 312 delwrite~ #0d4 1;
+#X obj 649 339 delread~ #0d4 0;
+#X obj 341 361 delwrite~ #0d3 1;
+#X obj 342 388 delread~ #0d3 0;
+#X obj 263 115 link~ c 100 1 0;
+#X obj 341 333 link~ c 100 1 0;
+#X connect 2 0 7 0;
+#X connect 4 0 10 0;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 7 0 18 1;
+#X connect 10 0 5 0;
+#X connect 10 0 18 0;
+#X connect 10 1 19 0;
+#X connect 13 0 19 1;
+#X connect 15 0 13 0;
+#X connect 17 0 10 1;
+#X connect 18 0 3 0;
+#X connect 18 1 1 0;
+#X connect 19 0 16 0;
+#X connect 19 1 14 0;

@@ -1,0 +1,44 @@
+In general, please use the Google group for asking questions:
+https://groups.google.com/group/open-source-haptics-for-artists
+
+I have decided to officially support the Max/MSP objects and the Synth-A-Modeler objects, once I deliver them.  I STRONGLY RECOMMEND USING MAX/MSP OR SYNTH-A-MODELER.  However, I understand that people might be interested in using the older pd or Chai3D stuff, so I am including the source code for them.  However, depending on how busy I am, I may or may not be able to help you if you ask questions about these in the Google Group.
+
+
+Notes on software
+-----------------
+• Currently the Max/MSP support is the most fleshed out, including testing the concept of using capacitive sensing to enable or disable the force feedback.  To use the Max/MSP patches, you will need HSP from the Internet, and you have to put the palette folder in the path:
+https://ccrma.stanford.edu/~eberdahl/Projects/HSPv2.zip
+!!!**  Remember to set the "Signal Vector Size" to 1  **!!!
+
+• To use the pd, you will also need HSP, which is currently included here (again you need to add palette to the path).  Pd is currently uncalibrated for compatibility with old models. (To use the calibrated version instead, which won't work well with the example models, rename FireFader~.calibrated.pd to FireFader~.pd.)  Pd reports an error message relating to vexpr~ for some of the models, but they work anyway.
+
+• test-direct-serial is some code that will run the FireFader directly from the terminal, without any host application.  (It still needs to be calibrated.)
+
+• Regarding Chai3D, we have verified that by inserting the files into the Chai3D source, it worked. Joel Sadler used it in a class project for a device using only one fader. (It still needs to be calibrated, however.)
+
+PLEASE NOTE THAT ALL OF THIS SOFTWARE IS GPL v2 LICENSED!  That essentially provides you with a very strong incentive to make your code open source if you make use of this code.  Also, if you can extend the code given here, it would be best if you can contribute it back to the community.  In any case, please read the license file for more precise information.
+
+
+Notes on hardware
+-----------------
+By default the motor controller sets up 
+• D4: Direction control of Motor A 
+• D5: PWM speed control of Motor A 
+• D6: PWM speed control of Motor B 
+• D7: Direction control of Motor B 
+• A0: Current sense of Motor A 
+• A1: Current sense of Motor B 
+
+So pin D5 and D6 on Arduino are ATMega328 pins correspond to
+D5 --> PD5(T1)
+D6 --> PD6(AIN0)
+
+
+Synth-A-Modeler via Faust
+-------------------------
+I am planning to provide the source code for this with some basic functionality (i.e. driver) for compiling directly to QT applications around the end of 2012.  If you need it earlier, just email me!
+
+
+Best,
+Edgar Berdahl
+March, 2012 and updated July, 2012

@@ -1,0 +1,55 @@
+#N canvas 592 353 792 319 16;
+#X obj 319 273 block~ 1;
+#X obj 598 125 delwrite~ #0d2 1;
+#X obj 598 152 delread~ #0d2 0;
+#X obj -3 124 delwrite~ #0d1 1;
+#X obj -2 151 delread~ #0d1 0;
+#N canvas 148 53 243 182 sample-for-GUI 0;
+#X obj 135 38 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 135 9 loadbang;
+#X obj 10 145 outlet;
+#X obj 10 114 snapshot~;
+#X obj 9 37 inlet~;
+#X obj 135 59 metro 40;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X restore -1 263 pd sample-for-GUI;
+#X obj 2 292 hsl 128 15 -0.15 0.15 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6201 1;
+#N canvas 148 53 243 182 sample-for-GUI 0;
+#X obj 135 38 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 135 9 loadbang;
+#X obj 10 145 outlet;
+#X obj 10 114 snapshot~;
+#X obj 9 37 inlet~;
+#X obj 135 59 metro 40;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X restore 598 263 pd sample-for-GUI;
+#X obj 601 292 hsl 128 15 -0.15 0.15 0 0 empty empty empty -2 -8 0
+10 -262144 -1 -1 6188 1;
+#X obj -2 179 FireFader~;
+#X text 184 24 The force stick is connected to virtual mass m by link
+l \, which consists of a spring with stiffness 180 N/m and a damper
+with coefficient 1 N/(m/s).;
+#X text 610 202 m is 1.2kg;
+#X obj 598 179 mass~ m 1.2;
+#X obj 290 151 link~ l 180 1;
+#X connect 2 0 12 0;
+#X connect 4 0 9 0;
+#X connect 5 0 6 0;
+#X connect 7 0 8 0;
+#X connect 9 0 5 0;
+#X connect 9 0 13 0;
+#X connect 12 0 7 0;
+#X connect 12 0 13 1;
+#X connect 13 0 3 0;
+#X connect 13 1 1 0;

@@ -1,0 +1,131 @@
+#N canvas 258 104 584 600 10;
+#X obj 244 307 np_nifalcon;
+#X msg 106 38 open;
+#X msg 157 80 close;
+#X msg 80 18 count;
+#X text 126 18 print count of devices to pd window;
+#X text 145 38 open device;
+#X text 200 57 send firmware;
+#X msg 198 127 stop;
+#X msg 179 103 start;
+#X msg 129 159 raw;
+#X obj 497 285 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 497 262 loadbang;
+#X msg 83 145 vector;
+#X obj 336 345 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 106 341 unpack 0 0 0;
+#X obj 219 346 unpack 0 0 0;
+#X obj 317 365 unpack 0 0 0 0;
+#X obj 318 398 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 349 398 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+2;
+#X obj 381 398 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+4;
+#X obj 412 398 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+8;
+#X obj 249 274 pack 0 0 0;
+#X obj 329 274 pack 0 0 0;
+#X obj 474 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 440 238 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 406 237 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 413 274 pack 0 0 0;
+#X text 79 394 raw encoder values;
+#X text 217 391 x/y/z position;
+#X text 336 412 button status;
+#X text 354 344 homing status;
+#X text 406 221 leds (r \, g \, b);
+#X text 498 240 homing;
+#X floatatom 357 235 5 0 0 0 - - -;
+#X floatatom 343 215 5 0 0 0 - - -;
+#X floatatom 368 253 5 0 0 0 - - -;
+#X floatatom 283 229 5 0 0 0 - - -;
+#X floatatom 273 207 5 0 0 0 - - -;
+#X floatatom 294 249 5 0 0 0 - - -;
+#X text 246 188 raw force;
+#X text 312 194 kinematic force;
+#X text 15 128 force input selection;
+#X msg 132 58 initialize;
+#X floatatom 117 375 5 0 0 0 - - -;
+#X floatatom 78 375 5 0 0 0 - - -;
+#X floatatom 153 376 5 0 0 0 - - -;
+#X floatatom 240 375 5 0 0 0 - - -;
+#X floatatom 204 374 5 0 0 0 - - -;
+#X floatatom 275 376 5 0 0 0 - - -;
+#X msg 94 221 auto_poll;
+#X msg 16 221 manual_poll;
+#X obj 21 269 metro 1;
+#X obj 17 248 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 13 179 polling types;
+#X text 12 202 recommended on pd;
+#X text 13 191 manual_poll highly;
+#X text 228 110 start and stop I/O thread;
+#X text 449 15 np_nifalcon v1.5;
+#X text 420 30 by Nonpolynomial Labs;
+#X text 377 44 http://www.nonpolynomial.com;
+#X text 336 57 np_nifalcon and libnifalcon info at;
+#X text 329 70 http://libnifalcon.nonpolynomial.com;
+#X text 195 80 close device;
+#X text 19 302 banging into first inlet polls;
+#X text 20 314 manually. Try to stay near 1khz.;
+#X text 19 422 Notes:;
+#X text 21 436 - auto_poll triggers output from the I/O thread \, which
+seems to freeze the Pd GUI. manual_poll is recommended on Pd.;
+#X text 22 472 - raw allows force input as raw values to the motors.
+vector allows force input as cartesian (x/y/z) values. You most likely
+want to use vector.;
+#X obj 407 125 inlet;
+#X obj 262 546 outlet;
+#X obj 407 147 t b f;
+#X msg 386 169 0;
+#X connect 0 1 14 0;
+#X connect 0 2 15 0;
+#X connect 0 3 16 0;
+#X connect 0 5 13 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 7 0 0 0;
+#X connect 8 0 0 0;
+#X connect 9 0 0 0;
+#X connect 10 0 0 4;
+#X connect 11 0 10 0;
+#X connect 12 0 0 0;
+#X connect 14 0 44 0;
+#X connect 14 1 43 0;
+#X connect 14 2 45 0;
+#X connect 15 0 47 0;
+#X connect 15 1 46 0;
+#X connect 15 2 48 0;
+#X connect 16 0 17 0;
+#X connect 16 1 18 0;
+#X connect 16 2 19 0;
+#X connect 16 3 20 0;
+#X connect 21 0 0 1;
+#X connect 22 0 0 2;
+#X connect 23 0 26 2;
+#X connect 24 0 26 1;
+#X connect 25 0 26 0;
+#X connect 26 0 0 3;
+#X connect 33 0 22 1;
+#X connect 34 0 22 0;
+#X connect 35 0 22 2;
+#X connect 36 0 21 1;
+#X connect 37 0 21 0;
+#X connect 38 0 21 2;
+#X connect 42 0 0 0;
+#X connect 46 0 69 0;
+#X connect 49 0 0 0;
+#X connect 50 0 0 0;
+#X connect 51 0 0 0;
+#X connect 52 0 51 0;
+#X connect 68 0 70 0;
+#X connect 70 0 71 0;
+#X connect 70 1 33 0;
+#X connect 71 0 34 0;

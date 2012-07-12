@@ -1,0 +1,10 @@
+#N canvas 209 264 341 157 10;
+#X obj 12 11 inlet~;
+#X obj 11 124 outlet~;
+#X obj 11 100 sig~ \$2;
+#X obj 11 77 r \$1;
+#X text 71 34 Ground object stays at a fixed position.;
+#X text 91 83 Arg 1: Object label;
+#X text 91 99 Arg 2: Fixed position of ground in m;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
