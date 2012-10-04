@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 606.0, 309.0, 416.0, 195.0 ],
+		"rect" : [ 736.0, 461.0, 416.0, 195.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 606.0, 309.0, 416.0, 195.0 ],
+		"defrect" : [ 736.0, 461.0, 416.0, 195.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -21,63 +21,72 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"maxclass" : "number~",
-					"fontname" : "Arial",
-					"mode" : 2,
-					"fontsize" : 12.0,
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"sig" : 0.0,
 					"outlettype" : [ "signal", "float" ],
+					"id" : "obj-7",
+					"fontsize" : 12.0,
+					"mode" : 2,
+					"sig" : 0.0,
+					"numinlets" : 2,
 					"patching_rect" : [ 111.0, 43.0, 56.0, 20.0 ],
-					"id" : "obj-7"
+					"fontname" : "Arial",
+					"numoutlets" : 2
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "newobj",
-					"text" : "link~ c 90. 0.",
-					"fontname" : "Arial",
+					"text" : "link~ c 100. 0.",
+					"outlettype" : [ "signal", "signal" ],
+					"id" : "obj-6",
 					"fontsize" : 12.0,
 					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 111.0, 18.0, 78.0, 20.0 ],
-					"id" : "obj-6"
+					"patching_rect" : [ 111.0, 18.0, 85.0, 20.0 ],
+					"fontname" : "Arial",
+					"numoutlets" : 2
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "number~",
-					"fontname" : "Arial",
-					"mode" : 2,
-					"fontsize" : 12.0,
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"sig" : 0.0,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 18.0, 69.0, 125.0, 20.0 ],
-					"id" : "obj-2"
+					"id" : "obj-2",
+					"fontsize" : 12.0,
+					"mode" : 2,
+					"sig" : 0.0,
+					"numinlets" : 2,
+					"patching_rect" : [ 15.0, 75.0, 125.0, 20.0 ],
+					"fontname" : "Arial",
+					"numoutlets" : 2
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"maxclass" : "newobj",
-					"text" : "Fader~",
-					"fontname" : "Arial",
+					"text" : "Fader1ch~",
+					"outlettype" : [ "signal" ],
+					"id" : "obj-1",
 					"fontsize" : 12.0,
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 18.0, 19.0, 49.0, 20.0 ],
-					"id" : "obj-1"
+					"patching_rect" : [ 15.0, 15.0, 68.0, 20.0 ],
+					"fontname" : "Arial",
+					"numoutlets" : 1
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"source" : [ "obj-1", 0 ],
+					"destination" : [ "obj-2", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"source" : [ "obj-6", 0 ],
 					"destination" : [ "obj-7", 0 ],
@@ -99,15 +108,6 @@
 				"patchline" : 				{
 					"source" : [ "obj-1", 0 ],
 					"destination" : [ "obj-6", 0 ],
-					"hidden" : 0,
-					"midpoints" : [  ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"source" : [ "obj-1", 0 ],
-					"destination" : [ "obj-2", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ]
 				}

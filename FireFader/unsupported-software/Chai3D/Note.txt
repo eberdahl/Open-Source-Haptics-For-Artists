@@ -1,0 +1,3 @@
+This code is actually quite old, which is why the precise version of the firmware is included that I tested with it.  Only one fader is currently implemented.
+
+To use this code, you would just need to replace the CMyCustomDevice.* files in the Chai3D distribution and recompile it.

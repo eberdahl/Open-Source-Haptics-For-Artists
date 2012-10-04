@@ -1,0 +1,1 @@
+*** Make sure that Fader1ch~.maxpat is opening the matching serial interface! ***

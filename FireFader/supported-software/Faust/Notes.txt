@@ -1,0 +1,26 @@
+Faust development for the FireFader is currently implemented directly via the Faust DSP programming environment (see http://faust.grame.fr/).  Using the basic Faust release, .DSP files can be compiled into externals objects (for example for Max/MSP 5) for use with the FireFader and the Falcon.
+
+
+
+
+
+Furthermore, here we provide the special Faust architecture file jack-qt.cpp to be used when generating an independent Jack audio/QT application for controlling the FireFader.  To use this, simply install it into the appropriate Faust directory (on my Mac OS X machine this is /usr/local/lib/faust/jack-qt.cpp).  Then compile the .DSP file using the command
+make jackqt
+
+In this case, the .DSP file must fulfill a few requirements:
+- Tt should receive two channels representing the input position of the two faders
+- The .DSP file must also have four output channels.
+- The first two outputs correspond to the forces to be applied to the two faders, and the second two channels correspond to the left and right audio output channels that will be routed out via the Jack Audio Server.
+
+See the file RegardingFaustArchitecture.png for more info.
+
+
+
+
+
+Once the Synth-A-Modeler source code is released, it will be possible to compile physical models into Faust code for the FireFader.  The channel requirements (see above) can be met simply by declaring two devices and two audioouts.
+
+
+- Edgar Berdahl, Oct. 2012
+
+Please note that these files are licensed according to the GPL v2.

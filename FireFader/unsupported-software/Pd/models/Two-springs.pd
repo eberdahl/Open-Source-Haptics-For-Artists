@@ -1,4 +1,4 @@
-#N canvas 521 187 839 559 16;
+#N canvas 444 151 872 512 16;
 #X obj -11 473 block~ 1;
 #X obj 571 94 delwrite~ #0d2 1;
 #X obj 571 121 delread~ #0d2 0;
@@ -19,7 +19,7 @@
 #X connect 5 0 3 0;
 #X restore -28 227 pd sample-for-GUI;
 #X obj -25 256 hsl 128 15 -0.04 0.04 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 8458 1;
+10 -262144 -1 -1 6102 1;
 #X obj 571 148 grnd~ g 0;
 #X floatatom -28 298 7 0 0 0 - - -;
 #X text 34 269 ^;

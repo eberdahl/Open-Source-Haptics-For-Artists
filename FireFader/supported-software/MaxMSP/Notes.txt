@@ -1,1 +1,9 @@
-For more examples, please download HSPv2 (you will need it anyway in order to use these models!)
+*** Make sure that Fader~.maxpat is opening the correct serial interface! ***
+
+For more examples, please download HSPv2 (you will need it anyway in order to use these models.)
+
+In Max/MSP 5, remember to set the signal vector size to 1 and the Scheduler Interval and Slop (see Scheduler settings under preferences) to 1ms.
+
+You will need to turn DSP on.
+
+https://ccrma.stanford.edu/~eberdahl/Projects/HSPv2.zip

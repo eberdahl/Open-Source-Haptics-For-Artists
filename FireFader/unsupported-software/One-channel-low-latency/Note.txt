@@ -1,0 +1,3 @@
+Lower latencies can be achieved when using just the first ("Ath") fader channel instead of both.
+
+This code is currently unsupported just because it is not needed by most users, but look inside the Arduino firmware file for more information about how long each driver firmware operation takes.

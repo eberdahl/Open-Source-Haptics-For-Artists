@@ -114,33 +114,22 @@ void setBaudRate(int fd){
 }
 
 
-inline int writeForces(int fd, float forceA, float forceB, int debug){
+inline int writeForce(int fd, float forceA, int debug){
   int returnVal = 0;
   signed char ch;
   char sentinel = 127;
-
-  // First write the sentinel character of 127
-  returnVal = write(fd, &sentinel, 1);
-  if (returnVal<1) { perror("Couldn't write sentinel"); }
 
   // Max. motor force is 1.3N at 10V
   // So max. motor force is 1.56N at 12V.
   // This needs to get mapped to the range [-127 to 126] and clip it
   forceA = forceA / 1.56 * 127.0;
-  forceB = forceB / 1.56 * 127.0;
   if (forceA > 126.0) { forceA = 126.0; } else if (forceA < -127.0) { forceA = -127.0; }
-  if (forceB > 126.0) { forceB = 126.0; } else if (forceB < -127.0) { forceB = -127.0; }
 
-  // Write the forces out to the serial
+  // Write the force out to the serial
   ch = (signed char)forceA;
   returnVal = write(fd, &ch, 1);
   if (returnVal < 1) { printf("Couldn't write char returnVal=%d!\n", returnVal); }
-  if (debug) { printf("Writing force chars: %d   ", (int)ch); }
-
-  ch = (signed char)forceB;
-  returnVal = write(fd, &ch, 1);
-  if (returnVal < 1) { printf("Couldn't write char returnVal=%d!\n", returnVal); }
-  if (debug) { printf("and %d with returnval %d\n\n", (int)ch, returnVal); }
+  if (debug) { printf("Writing force char: %d with returnval %d\n", (int)ch, returnVal); }
 
   return(returnVal);
 }
@@ -154,9 +143,8 @@ int main(void){
   int nChar;
   long nReads = 0;
 
-  float positionA = 0.0, positionB = 0.0;
-  float forceA = 0.0, forceB = 0.0;
-  char capSenseA, capSenseB;
+  float positionA = 0.0;
+  float forceA = 0.0;
   
   // Start out this number high so that we don't recognize any incoming data 
   // until we receive at least one sentinel
@@ -168,50 +156,38 @@ int main(void){
   // Flush the input so that we are receiving only the newest info ...
   tcflush(fd,TCIOFLUSH);
 
-  // Write zero forces to the motors to get the loop started
-  writeForces(fd, 0.0, 0.0, 1);  
+  // Write zero force to the motor to get the loop started
+  writeForce(fd, 0.0, 1);  
 
   for(i=0; i<NUMBER_OF_ITERATIONS; i++){
-
     // Read in input from serial interface until no longer available
     nChar = read(fd, &buf, 1);
     while (nChar > 0) {
       nReads++;
-      
-      if (buf == 255) { // Received Sentinel character
-	sentinelCount = 0;
-      } else {
-	sentinelCount++;
-	
-	if (sentinelCount == 1)
-	  positionA = ((float)(buf) - 127.0) / 128.0 * 0.05;
-	
-	if (sentinelCount == 2)
-	  positionB = ((float)(buf) - 127.0) / 128.0 * 0.05;
-      }
 
+      positionA = ((float)(buf) - 127.0) / 128.0 * 0.05;
+      
       nChar = read(fd, &buf, 1);
     }
 
     if (DEBUG && !(i%100))
-      printf("PositionA = %f and positionB = %f\n", positionA, positionB);
+      printf("PositionA = %f\n", positionA);
 
     // Calculate the physical model
     // F = -kx  for a spring with stiffness 100N/m
     forceA = -positionA*100.0;
-    forceB = -positionB*100.0;
     
-    // Write the forces out to the device over the serial interface
-    writeForces(fd,   forceA, forceB,   (DEBUG && !(i%100))); 
+    // Write the force out to the device over the serial interface
+    writeForce(fd,   forceA,   (DEBUG && !(i%100))); 
 
     // Sleep for SLEEP_MS_PER_LOOP milliseconds before running the process again
-    mySleep(SLEEP_MS_PER_LOOP);
+    mySleep(SLEEP_MS_PER_LOOP);   // This is quite approximate
   }
 
 
 
   // Clean up after finishing
-  writeForces(fd, 0.0, 0.0, 1);   // When finished, set output forces back to zero
+  writeForce(fd, 0.0, 1);   // When finished, set output forces back to zero
 
   printf("\n\nClosing serial port ...\n");
   close(fd);
