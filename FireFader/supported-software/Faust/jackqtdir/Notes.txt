@@ -1,1 +1,0 @@
-This example is compiled under OS X 10.6 for the FireFader.

@@ -1,0 +1,17 @@
+PD IS NOT OFFICIALLY SUPPORTED !!!!!
+
+
+The pure data patches are not currently maintained for these reasons:
+ ¥ The Max/MSP scheduler is able to run a little bit faster than the Pd scheduler, so the feedback control works a little bit better.
+ ¥ It's harder to build physical models directly in pd because pd requires you to manually insert all of the single sample delays separately (so the patches don't look as nice).
+ ¥ We don't have a particularly nice collection of models that are in good shape to be presented.
+
+If you really need to use pd, drop us a line and we will see what can be done about it!
+
+
+Cheers,
+Edgar Berdahl
+
+PS. In pd, try adding the following to the startup flags to decrease the delay for haptics:
+-rt -sleepgrain 1
+(or maybe -rt -sleepgrain 2 if the previous crashes pd on your machine)

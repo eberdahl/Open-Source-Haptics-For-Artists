@@ -1,0 +1,2 @@
+A laboratory exercise on controlling the FireFader using Synth-A-Modeler:
+https://ccrma.stanford.edu/wiki/SynthAModelerFireFaderLab
