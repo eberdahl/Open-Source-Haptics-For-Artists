@@ -1,0 +1,3 @@
+[submodule "Software/Synth-A-Modeler/SaM"]
+	path = Software/Synth-A-Modeler/SaM
+	url = https://github.com/eberdahl/SaM.git
