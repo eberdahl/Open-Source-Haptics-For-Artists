@@ -2,3 +2,4 @@
 *.mdx
 jackqtdir
 mspdir
+.DS_Store
