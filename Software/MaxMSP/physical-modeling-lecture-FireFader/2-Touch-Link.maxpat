@@ -1,10 +1,15 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 615.0, 412.0, 775.0, 302.0 ],
+		"appversion" : 		{
+			"major" : 6,
+			"minor" : 1,
+			"revision" : 3,
+			"architecture" : "x86"
+		}
+,
+		"rect" : [ 1798.0, 283.0, 746.0, 415.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 615.0, 412.0, 775.0, 302.0 ],
-		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
@@ -12,24 +17,25 @@
 		"gridonopen" : 0,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 0,
+		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
 		"boxanimatetime" : 200,
 		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 18.0,
-					"id" : "obj-1",
-					"maxclass" : "comment",
+					"data" : [ 8035, "png", "IBkSG0fBZn....PCIgDQRA...HK...fVHX.....Gcxvg....DLmPIQEBHf.B7g.YHB..enQRDEDU3wY6clGlcTUs29cuqoyPOm4AxPm4DRHgg.jDl8JWAUF7SHfLKpndUDhWkqfW4x8JxGCAUTbB+PDDEQQjIAA7BBQFR.BHDFCYljzgtSOb59LTUsWe+QcNmt6zcfzc5PBP897zO04TUcpgd+qV0Zu1qZUJQDgXh484n2ce.DSLCDDKji4CDDKj+PFRPNdlk+jrws1wt6CkAThExeHiflWEmy+mOF21isp92FnPKbMWxExsbeOw.6A1NI189rC4Qu+6lm4EWICu9oR8U5ge0ikCYtS581itXFvwwwF2.EhQ0O2BgroFVCtYZc.83ZmkdQHGxu9J+24y8e9S3vOwS.66+2wi7vKiYelWCKYtW368GgwrSS1VZf+ve3NXysjmYNkQRfXitjNVxwCcW2AKaEqkQOoYxI8oNVr5nIdf+xixTOnij5Gc0.PKaZk7nK603H+HGAmzo+EH4nld4s+ar7Gi+5isTx5qYz0uObhG2QfiB1vq8r7mt2+FEzUxwdBGOSYLCaW2IorMjY8KUlTMJ4zujeZzLJzr7YOpIJK3LW71tpw79.76nA4zN5CPpY3iWNsS93k8cZiVbrqRt964kEQ7ke7WYgxH1qwKm7ocpRsUWg7uck+FIr8sHGvnqTNguwOo714ZufOtL5Y7ojVZsAY9SHobNe2elHhH+ka4ZjAkxVl79s.4TNoiQNwEtHociHq8ItGYeF4fjE7IOY4Pl6Tkwt2Gh7pMjaW14YODxM772oLR6Dxu8u8lkm226L1WY9mwUuK6f3CqXLFwOvWx4mSZOe6RqYaU1ZGaUxVH6.193ot8um33Vsb2OypDQDYS+y6Ul3PqR9Q22aHs9lOpTmSB4xusmTDQja96d5R0iYARSAhbiW5oHUN9EHuUVQBadUx9LlAKWzM7PhX1pb3SuN4KdU2jX5XSxgTeZYRy8rjMk0zk8Zd4B9jyUF47NawWDo80uTo9ZpPtheyiMfcdsszSWKTJDU.YxWpWsBqswbvf5u9T8AGZNaKbCOwMPqYag.SP4+7CilFZBPLBhHH.hXvHBFwfnT333.RHgDRA+b3GXPAfBTnPqzjIaFlyX1W9uO1Ka.4Xd8u1yQ00NKNfYLN.XniZhTWZa.EM0bCzTfO+jK9r419t1z5auZ78qfM2lvwcxmE+6+eONt2m3UY+Z9tXUYFLelS3PgBaE.TJElN1BM1P6bZW7oyvRzU8QNd0Vamld4Gf4rO6C3mg02RF1RSqc.4bp2nGB4pG8dS8inBtpu8kx3zeV9GOvsyu3u9ZbnmkytrCh2uPCssYtim+Ox4eXeUbs8vVaiikC1ZarsrwVaikxBKsEZkFsxBKsFKsMZ+L7P2yelk+ZafjIqli9e4LX9ydhnU5xquk1hku9mie2y86GvNlUJEBgHE0YJKEAlRK0.1o3K8stJN7oVKFrHUEUv3pTQhpmGer8aLbK23Om+5V96bPG2YwdWmCjsKCDrxBQCaMyV218JAExyDOniie4kdVTnfOddIXTieBCXmWaK8PH6Va87St9qmuxk7+v48E+xLk4bvbhKXZ7VE72kcP79ErTVLt5FGm79tv91OLrCtvy3SwO5O+j7I9DGK5LuFu8TEF6QN1drpCqxgy.489F7XmJM1vcxe59WBmx7qme809eyKt97XQHiXryhYVqgG4wVBeoOy2kpbUzTCaFLFvpBNyy4T3i7Y+d3jpFt4G7j6xVUPLgXU0XXem5D4Ws3qgS9e4f3.mxPXMqbML75qmOwAOaVzu5gHi22fibtiC+NZk1JL.dhssr874HnPdo4VZUBxtN4iN4gJGyE9y1k4ey6WXUMtJ4S++6SKEBJzm9c+y686KJPtvEeuu6q6a8Oky5VNq96gXOnPqaPNyic+EqjUJiariQl4LmoTSkCVtt6YEhHh7326uTl3HpRF83mrr2yX5xbVvQKuViQmeY13KJyXPNxX1+SSZNn3FL6ljCa5UKm2UbChHhrlk7.xBl7nkJpc3xzm9TjYOuiVVcFQxu0UIe1SbARc0Vmr2yZVxDpeBxUcq+0AryqskdMNx+rE8o4dVWZNj8aprja+F4oZXvbGmwwrK7xo2efs1lPSHReLOqZc8uIU3MFN2S6irCrObh70VDTpcdayNUNR9E29Cx47jOC9JO1+CX+nw2ZMTwvFG.L+i4b3oW5gxy9hqDw1igOlww3qMxMxzCe5bOOwxIL0PoZqhaPuAyMbGKgj0Nb.XLy6ix8+DOMK64WAAhEiXuFOiJEXqFG2vs8.7EepkxVZKOUVacL0ou26zmOaO5Ug7Qrvyilu+Gk0ut0yLNtOOW5IcpLmoLhcYGDueAascTG21ADxasil4k2zJXqYalmu02fBipYZnssvzFxndG+cNV1DXBQPPM.4jgSxZ3POhip72qdRSsaKu1QMQNpQMwd4WpXbSZ5ayrrXhSYFcaVoqaDbXGQunOrSw9M+Cq+dX2mnWExS9.NJ9lGvQ0aK5C0XqsHTLXvrcWm1x0F+rk7y3IW8Shk1B+vPBbyh6TZky5G7Q4qbBmKKbReRxWHIia7irGRUacQgr.CnNK+Abhy0h9.VZaLlsuE4M15l3KbamGO+FddpJQU3Y6xPpbPLxgVOybumIq9kVAK5+5B4.VzAyU76u8dUmZYYgwDBDml38E1N4ZQL8FJUzM66Mgbq4ZkK3Nt.pIQ0rwV2HUlnJFZpgvlyrYTJMG3A+QXh6y9vK7xuHSar6MMndBZN6YRMIqoaaGMZ.EFwfEV8X+rmHB.E+ex.ge88GhsH2GPoTXorvH8z0hq8Q993Z4xlZayL3JFLsmucZJaSfRAHzb6MSaY6fCXlykrpLTsmG+fG8G1isiVoQIf79DKxgggDDJj2Oj74yienP36vcs1UQrPtOPIqkaqH6sZ4sXYqYo3Z6PRmDzR1Vo1T0fisKGyLNFNlYbLXYYSMIqlFa6sIoSJbrcYYqYYrgl2P22GJcwQE78GBY+PXKu7RXE+vOEK+6rertG4FIWg.BC66Q2YmgXWK5Cj1KM1ZGbsb617e50rTR6ll1y2A0ktV5nPNR5jhe7I8iJuNm59ep7ku8uLFwP0IqlszVCj1KEO8ZVJmPMcFICUQK3khNRzPeGRnDFMsze6.eOHrz7CvXLDHAcac551NvDfuwOZ9gQe1Ovu3Pv6SAiOggAk+tuuO4J3yDaoE12m6NQUy3PUc8r1a8KgN8PXny4ekDJCJq2abO58kBYQDDDLFS4Fgt0HtsMrx113YHTJ13V56l.BknoAcaaEPfD0vlsPVVYiuAW4Cek3Z6geXALhvyr1kQZ2JnxDUvVauYrsr43m0w0ii6ialGO27RuY1bqMPEIRSqczJM1dicacbs73k17KwT9elLhp34Zo70ft74R+OPDjt8cSO9MkWmheFQhbrsjASoK+oH59z5nN2ZqshlphlZosvVoQIVTYGAruaoA1xnlAi8S8ywxMEYt8svlt+uGULgCB6pqF2OnKjMhP9LswUeuWNqn80PnxPfwGeS.9gEHHLD+vB3aBHHzmBg9QKOzmBgEv23Wtgc6131kkKhfASu94s868ZCbIrgku1mqbCtVagVoXgydgHhPg.ezZMIcS0iy4TtIADBMgQIcSwi6thBHsSZl9vmNdNd3Z4hi1AGKmh40gCNV13ncv1xAmx44gC1V1c46EyCjhKywpK4ERwuWZpkUjf00xsXNhDkmHQSUkmmp32kPCY8E17C7invi+Sv9XtB7RWEJTj3.+bj4N+Rz7q+jjXNeTrBCw58.w7tEgbjfSwq9+dW7lW2UwJNpofthDXaYEk3M5no111jP60okfdYpq1s6MxEa.sJ1n1YR8TpQ2AGsE1cc9Ea3K2nW5yVct8bsbwOzmK7NVDW1w9ewfqXvkafumW7dYIu4iQtfbL7pGFslqMdjW+QXA0O+tcd+nu9ihEZFbkChL4aGaaapvKc2VGCFFWsiia+bt8caQ.3cC+BAzZqYXyq5wQOlCjAM5YfmSju85wtezQUij1d4GjZm9giqk5CtB4vvPBDnkVZjYV0X3ROm6hZGxvvy0EKKKzniB00dXMjFigpRTMSZnSh5RUW44ejS9H3AdkGfZRVMYKjkfPeV95eNttG853Hm7QB.+sW6uwys9kSBaO5HeGfHjsPGrOide519PghPIjL4yPkIp78zyucDLFCEB7o8s9VjeKuAol6mEujIohDNQwXW6h6n2e53MebJjqCB8bFvFt82I1sHjMFCE7CILH.kRiEVks5oz6YId6JAl.PLTHn6ow0zF1zXz0LJLhg0s00QsopiJrqjGakOFK4MWRjKNFgJbSSHgzTGMwnqYzTgWkL8g28g.NJpExdrgeSDgPiPgLMRX1VwcHSDOOW77bwXL3aT3M54PlU8Hju4FHnxJIrWbuXfVXuaI7ahTriZEi2XPPT3Z5s3ytmDJkJpCXaqHSAm+ge9rllVCiutwSa4Zir9cPMIpIx2ciPcopibA4okrsvXqarr5lVMK5HuvdjOEJkBCl8X+eQo1tf1aBHD6zCBGKMVVV333fssEtCchXxmkBMuABBBwOHj79gzQ6YHW9BDXh1FCjraKNxk6nEC7mT6pHJI06YGz.XJCcJbIG82lU13JYjUOBzJEAR.in5Qvvqd33a7QqULppFEq7sWIWxQ+sYhComIpiVoi5r5dvVjEAL4ZCkkCVdIi5qfN5OasFmpFAfE4aZcjOvPqMtYdie6Wmk+eNadoE+I3sekmhBAltEqYo7SUS+67Nd.Q5CnPgk1hfvfdc4yu94whOwES6E5f7A9nTZ1RauMM1dinzJxGjmNB5fq53uJle8yq22GEiRv1aer6jtZ7QBxCJMJsS49yDIlUXknRTISS9leKZq4sxpukuDaYI2D5I9QoiV1Dq7WbJr009JTHHjfffHK14yS6M+13GFIv6q79x3Hu6BkRgs1JxW4sCSaXSie0ocirr0tLd7U93zZt1PPntj0xAN9ChCbry8cz+vnKVzDX56MluWQIAshh95p5zmWkRg1MAZuJHe6MSiOwsP1W8uR5i+mh6DOLbadgz1stP1zC+CwagKFWaM4auEV2ueQj4MdbF6od8Lj47w.5agsKVH2GnjEYey67i8kVoYtictL2wN2979nTH8BeGtXYOB5EW.htahBkkGJ2T3+1qE+Fuebl5GmDSX9XI4wttQQgYbBj4UtaZcKKB2JpkMd6KhVeo6Gc5Qv5u6KkjietTQUUGcwh1BzJv.JLn08tSDwtVzGHxhr8tza6W10h8zEx11EGvos4NGJ.KGvMMga74wz75vcpGKoRkjpqtJRmziD0OOBaqIZYCuAa4EdPZ8YtMbO7KFmC4BH+FeIZdUKm79ATHvPyab075+tKlFe8mlfvse+ohEx8Qr1E6+ZoAlYOdgrkGXBgPe.UY+jixTDPTVn25JQkpFbF1zHUBWRmNMISl.2pGInso8srJZ8otQrF49hd7GFT4HQrRP1MsBxlymVZ5s4MukuLq6Od4r5+vEQ6YxPv1w+4XWK5in01DtsVgnybxsa4CQWGhb59TiDEhsR4IRPXzz7ECQW3dfc1qqncR.lPjfH2rJMnGBQiSPTnM.UsSBupGLdtN344gQh9sJWOxs9mE05eF7NruIIRkFC0hepZI2auVxzQNZ4Atbx7F+cRLuyjNdk6jlWyKf6TlK1V8zEiXgbeDKslK+9ubFZ0CE+vhYKVWxjrxIjCklHEmko7znbrHLJ2EzQ43rRE4+sBEUkrZpJQ06FOK6c5pUWsWEQZ0Bs2y.EJFjhcV0pt5w0MANNNQiZq1BzVf1EYMONZ2j3N1CjjdNDpqlNRjlBYZls95OIs+j2.VG3WEYbGJlU7GoiMtB7mv9gmiUrPdmku4G4axFadiQC.PwD0wtbR7X2kjtQW1e2xeltO+tNsTkFpjfVq1y0qOkBzNo.kGlbsEcAZW67mXJ9GXU0vv0KJ0CJEgCSfOFSH5s95nl7+JIpcjjzyg7V1nr8vOaF7elaEpZTXO8OIhwGS55nvVdSBBBvX5orMVH2GYb0MNFWcia28gwtMJYQVY6gxRioPFDTcISBABCJ56LXkpJrrsKaAUDASgrfeGQ8KbDyBuDIvwwE+vBfRQXaMfZquBtyZgjnp5PYBo0jUieyaLZDfKNhvcMLlwB4X5ynTf11CkSBBy0Bx1LRmlfBfetnrgyIIZstrnSDHLWKPg1QrswdnSAW2ng1FiORXHz7afJHGti+PHUBWPYQGIGLlN1ZYQ71JjeO+9Waugfrq4FbL6YiRoPo0nrrHrsFPJNTykys6.ejfBfFTVtkyljRIbT3VWGDDBopEmZ2Kbrzn0VDVHOhedzstATUOJbGxDHgqCtttncqDSg1wrcxSiALKxkGy7tbkWuudPn.lh+gnJ+4vhIw9NRdQUzcK38fTDLlNI5+0JDSHRX.hwzMqjhHHg9HgEJFGtfxsOFSzvO62zZhZmSTEtUOTrrzQtTjuCLEc4fAMcbSUAttNDHZTtIwzQCr8JSBCHB4vvPLnn8lah2dUuBA9E5gRVJ9bzHhPfuOEBMz75WIA46fM7hOEssgAgiiS2tMz1UdVrVrV4fGFCc7SEaKcrX98HJYvRY4.1tnSUKzkNlJBXLAQwXFhBQGcl0b9AAD13qEIjSORbRTAVE8e1jOCR9L.fyPlHddd333fIPP6jfvfLQchrWXmVHGDDfAEq6e9z7vKdQz7FdCBKTn6pPQ.sERX.AYyfkaBT1NQWUaBYIK9q.kSjdE9YaCs1BKuj859TosHeqswvm1r4jtt6ippol2SdJDhoTH35LTbXBJ+cfxwIGhj.RXP4nZXDvOSyD17ZixOipGM1E6HXnnHL6VgrMCJvtlQiSoGzBiAkSJjPeLA8d5ArSIjCBBHPf08OeZ9yWzBohgOVN7u8uFKG2N8WxXHzHzQyMwK7qtL76nMl84dYjdPCGSXHFQh57f1hPigW6N+4rom4gXFm92hQLqCFMRwTazPXnACJ1vS8.rha6ZYPSc+HvHDFF1MK4wrqGkN5Y3SUbvg5091n.w3W9giMLzPgV1LlV2Dn.qpGEV11Q4fcnfeyaHJhGdovtxgUz2YMJkfxwsn6L98paq8agbIQ7Zegml65atPpXzSfEbAKlDUVKZEn0pnakDZn02tAdke4kQgLsx9e9KlgMoYgqsFkViTz487997B252mM+LOLy5r+NL9C6SRRWarsiRSvfv.7CEV4i9m4U9iWOS7XNa1mScQn053NHtaAETz.SugPm8Upbx3aL3mYKHYaJRHWydgscjDLzXHrkMF4BrSZrRVCZcmoGJJUzHmtcZq6WB4Rh3077OM28EsPpbz0yBtvuOUTSc3UT7EcvIr0F1DK6G+Mn8MtZN3EccLrIOSR44RhDIPoTDZLjKWdd9a8ZY0O3sxb9bWF0e3GGobsIc5zEqEZFJDJ7xO3umm8mdwLgi9yvr+LWHISl.GmnGR0Xqwu2hRqi7MtWR2Tk1Fkkc2JDiQVjCwukMF0ydujXU4vwpnXMLzPXqaJ526lB6jUgVWTDiAssGHgv1IGT5yBYeeeBQwpd1+A28EcJT6DmAy+7uFpr15HUhDkEnFAZZSafG4JNOZqgMvgcw2.CchSmTdtjJUJrsswHBYylikdieGd86+l4.+pWM0eHGCo7bIcpT35FUHT7MBu7c+q4e78+5Lsi6bYVm7WkzoSQEoSShDI1to1WL6pn3PUWreOhQ5xR.ssKJaODonnVoJZUVHLSiQVcSVGN0NJrJ1zEFFhosMBF.2zQCjhtqODxZnbI4nmVl6SBYeeeBPwZJJhqah6My67uZprl5HcxjjLYRrrrHTfV2zF3ubomMssk2hC+a8KXXSXZjJgWYQr.jOaN96W+2lW49tYN3y+ZXBGxwRBWapHcEEEwJBLBu38dS7HW8EvzNgOOydgeMRkJAoSkhjIShiiSr03cGnJZQV5dkCUq.mTUiJYUH.1IGD5tz9nTJH.rFxLHQsCG6hcROzDfTnkn0I8Hw1wKJ2lK0Ixfbf1JJ+j6u9HW51BgnX0O6RJJhmYmh3TcJhMnXqaZCbOWxoSqadCbDW7ufgTeTZ7kJUJbbbPDHWtb7+9C+OXE2yMwAe9KlIbnGKIchbmnjHNTfkeW2DO7U9UXZmvWf4bJW.IS5UVD655FKh2sgpGtVn0QODpIRWAdiYdPGsRxQLYbJVaKrsLjXT6MsOzIQpYc7jtnQMnXzMJ9.KXU23wtXnXgRCVlo3PJp6VTRJwNjPNpzTAqpnHt1INSl+4e0Tw1HhETzzl1.28kbZzZCuEGwkTTD60EQLPt743u8CtHdo64lXdesES8Kn6hXkRQfnX420MxCeke0tIhK4NQrHd2CkB+VT3R0Qu3b5xxbbbHoqEC8H+2HXAmKoqtNbK1OF2vPpcRGHdm2cfaxJHUBWbccw22GKaWTnPLf6nlY4wTnDheth9d26ucwdWExFiAi.u4R+6bWeqSiAM4Yx7O+qIRDmLQ4auaDnoMrFt6K4zo0sroNsD64PpR96pTjMSFd3evEwKcu2By6qcsQtS3XS5zovyyCsViePHO2e5WxCe0W.S+D+BL6S4qQxDwh38DnbLhUZPqiBIVWpMx111jLYRzE6jtqSTdHWJ62TJEoRlBsVgmmWTekLFbccHwjNZPmhJp+fHgqcjwwRgwMeFvIY+WHWZ7wW2y9XLzosuLuu5UR5ppgTEEwk5PFhPCu4Kgeg.NpK4FXv0OMR5FIPcciDngFCs03lYyu5yyB9ZWC0enebR3XQpToHQhDkiPgeg7r5k9vLiS3yybN0KjDdtjNcxXQ7dRTzGYoKtVTJTYtttQ8CRjh4frtbb9KEtzNepq0XLFR5ZyPNrykvC9LHY5JHgWz1v2OJtwR1VP6Mnt42bWYGyG4PelyI8EY54Oarc8vy0srk3RhOSnO60rW.G2U86w1KItN1kE5kNoLggT0PFAehq32g1wCGaKRlLY4qLUpnXOq0ZNpu9OfPCX63PxjQQCItic6Agpq9H2YsonjU4tZktDkDtaalq433T1JtXDbbriRTntl5m4ZDc5QVrvo2SdWExkbfOU5z3ULTWQUTF6xCKbo0wyKA1NNnJdvURnW5DpT0no55FDhwfssc4sUoSrRa+zUUMhwfkkU4KFhEw6AQwNdIEykhdt32gRdv1rrtZEuzx6TDGkVnF+LXmnxsaMA7cUHW5Jrd6VBcaCY2Y7Be2VG6hcPnq2xoqmTc0Q+dachY2GkebmJVlYQBeGGwscTrrr5Q9xXLlnmAvBYQJjEcpp2tZgcHWK5MQ41RIAe+4.t+r+hY2KQO1RVcyG4AZJUFsBy0FlbsgUUCq3EP8zpbrZIl9NBQgeSG4ibWGYuAzciDUz1Cy1Fl7cfcUCqb9WrsDKjioefTrydpdVfVFH2KhfXfvbMCFCVoFTYgbrE4X1oojOxc5ZwtNKxhH325lPYYgUxZiduZEaQNlAJ5Lw520XQtjHNzXHno0gNYkXkt1dc3ogXgbL6LnchJFK6h17kxXN+FWM5TCFmz0F6ibLC7nTNQ4Zwtfm98xo8YfO9M95XUy3wxwc6NxdwB4X5WnhJtEa2ADYf.AvOSiDzx5wY3S4cLrrwB4X5+nr5Q9HOPgwXvXDJz7aQXaMg6vlFVV1cV5s1FhExwzmnSQTwhv8tn2+KQu9hExu4WCkkF25FG1VzqgdChExwryfxt3PTOvtY65a8qrq4YPW0Hvo1QiUWxAiskXgbL8ODhpUIRmkKqArMcwN5UHa6TXCKCmgOabRUAVVw9HGy.Hku0t1paow4.EhHDJPtsrZJzvaPh5OXbr299GCwB4X5mT5onlcACQswXHHzP6q5IAkhDidewt3y8WrPNlAd1Ej8ak7OtPgBz9KceXOhYg2PFW42tpaOhExwz+QaARmELkAB+jipHQBc7VuJ4V8SPxocr35knGOLp83PYmdOGyGZIJ7a9LP5irILD+.Cs7b+QvNAol7Qfqi9c8IDJVHGSelxkD.sEPX4DfemEiID+PCY1x5o0k8aHwdeBjbv6EtuKczChExwrSfRU7w02X1gJN6uSHhfue.47MzzS+aIHaqTw9tP7JVw5eWeph1I2+w7gYzVEKFals6anfcTBCCoPHrwG5GSSO30RpYuPRMhISBW6cnR.QrPNl9OJMPjE4cFDQHHLjNZoIZ9otQrmv7oxC4KSRuNKtKuaDKjio+gRgxxtrE4cFJUGsyrgUPgFWEo1mSjT0MLR34tCWKShExwzuHJkJUHA4PyN2KjnnA.QHyq+2QknJRNpYQRWqcXqwP76YuX5Gn0ZrUPp8ZNH6+YiiWx9csGoziyTgrYoiW6gwYj6KIpaj3459tF63tRrPNl9DkqXT1ZFzLNbpc5GNt1Zr5muYsJUaAytkUQ9M9hT0Q9efaQWJ5KufihExwzmoTItpTkkpToPq+Hji7OVn8UuTDSHIF6bwwxpOWhzhExwzmoqkQsReu+TYnJkWElvPZeE2G1CdRjbX0WtvfGKjiYWNkbwXmgRiHnDT.uQNKRLwihjoR2sJw4N7wiD+t8JlcSHhPPP.4xkibEhdc.6VrdY2WcUI1hbL61njU8tZA11t+85lK1hbL61ozKkcn+6ucrPNlOPP7H6EyGHHVHGyGHHVHGyGHHVHGyGH3+OPNbGlL.5DhkA....PRE4DQtJDXBB" ],
+					"embed" : 1,
+					"id" : "obj-9",
+					"maxclass" : "fpic",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 415.0, 196.0, 185.0, 27.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 423.0, 184.0, 128.0, 27.0 ],
-					"text" : "300"
+					"patching_rect" : [ 547.0, 310.5, 178.0, 90.0 ]
 				}
 
 			}
@@ -37,11 +43,59 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 18.0,
+					"frgb" : 0.0,
+					"id" : "obj-7",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 8.0, 6.0, 722.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 9,
+					"presentation_rect" : [ 58.0, 12.0, 128.0, 187.0 ],
+					"text" : "A contact link is like a spring with an offset gap in it, so the force is only active if the offset gap is pushed closed."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 18.0,
+					"frgb" : 0.0,
+					"id" : "obj-4",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 230.0, 322.0, 185.0, 67.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 694.0, 349.0, 128.0, 107.0 ],
+					"text" : "c has a stiffness of 300, damping of 1.5, and offset of 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.994927, 0.989975, 0.9901, 1.0 ],
+					"id" : "obj-3",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 187.5, 298.0, 303.5, 115.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 18.0,
+					"frgb" : 0.0,
 					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 514.0, 128.0, 185.0, 27.0 ],
+					"patching_rect" : [ 505.0, 236.0, 139.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 640.0, 232.0, 128.0, 27.0 ],
 					"text" : "Force on fader"
@@ -52,11 +106,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-26",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 410.0, 141.0, 150.0, 20.0 ],
+					"patching_rect" : [ 401.0, 249.0, 150.0, 20.0 ],
 					"text" : "|"
 				}
 
@@ -65,11 +120,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-30",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 410.0, 123.0, 150.0, 20.0 ],
+					"patching_rect" : [ 401.0, 231.0, 150.0, 20.0 ],
 					"text" : "|"
 				}
 
@@ -78,11 +134,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-31",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 410.0, 131.0, 150.0, 20.0 ],
+					"patching_rect" : [ 401.0, 239.0, 150.0, 20.0 ],
 					"text" : "|"
 				}
 
@@ -99,10 +156,15 @@
 					"outlettype" : [ "float" ],
 					"patcher" : 					{
 						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 3,
+							"architecture" : "x86"
+						}
+,
 						"rect" : [ 276.0, 159.0, 280.0, 282.0 ],
 						"bglocked" : 0,
-						"defrect" : [ 276.0, 159.0, 280.0, 282.0 ],
-						"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
@@ -110,12 +172,16 @@
 						"gridonopen" : 0,
 						"gridsize" : [ 15.0, 15.0 ],
 						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
 						"boxanimatetime" : 200,
 						"imprint" : 0,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -165,6 +231,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 18.0, 32.0, 20.0, 20.0 ]
 								}
 
@@ -224,8 +291,8 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -233,8 +300,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -242,8 +309,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -251,8 +318,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -260,8 +327,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -269,8 +336,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -278,8 +345,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -287,15 +354,18 @@
  ]
 					}
 ,
-					"patching_rect" : [ 321.0, 131.0, 84.0, 20.0 ],
+					"patching_rect" : [ 312.0, 239.0, 84.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
-						"globalpatchername" : "",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
 						"fontname" : "Arial",
-						"default_fontsize" : 12.0
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p prep-hslider"
@@ -311,7 +381,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 322.0, 131.0, 189.0, 20.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 313.0, 239.0, 189.0, 20.0 ],
 					"size" : 1.0
 				}
 
@@ -320,14 +391,15 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 18.0,
+					"frgb" : 0.0,
 					"id" : "obj-18",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 559.0, 72.0, 185.0, 27.0 ],
+					"patching_rect" : [ 585.0, 175.0, 140.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 625.0, 217.0, 128.0, 48.0 ],
+					"presentation_rect" : [ 625.0, 217.0, 128.0, 47.0 ],
 					"text" : "Position of fader"
 				}
 
@@ -336,11 +408,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-16",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 455.0, 85.0, 150.0, 20.0 ],
+					"patching_rect" : [ 481.0, 187.0, 150.0, 20.0 ],
 					"text" : "|"
 				}
 
@@ -349,11 +422,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-15",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 455.0, 64.0, 150.0, 20.0 ],
+					"patching_rect" : [ 481.0, 167.0, 150.0, 20.0 ],
 					"text" : "|"
 				}
 
@@ -362,11 +436,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 455.0, 75.0, 150.0, 20.0 ],
+					"patching_rect" : [ 481.0, 178.0, 150.0, 20.0 ],
 					"text" : "|"
 				}
 
@@ -383,10 +458,15 @@
 					"outlettype" : [ "float" ],
 					"patcher" : 					{
 						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 1,
+							"revision" : 3,
+							"architecture" : "x86"
+						}
+,
 						"rect" : [ 276.0, 159.0, 280.0, 282.0 ],
 						"bglocked" : 0,
-						"defrect" : [ 276.0, 159.0, 280.0, 282.0 ],
-						"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
@@ -394,12 +474,16 @@
 						"gridonopen" : 0,
 						"gridsize" : [ 15.0, 15.0 ],
 						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
 						"boxanimatetime" : 200,
 						"imprint" : 0,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -449,6 +533,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 18.0, 32.0, 20.0, 20.0 ]
 								}
 
@@ -508,8 +593,8 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -517,8 +602,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -526,8 +611,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -535,8 +620,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -544,8 +629,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -553,8 +638,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -562,8 +647,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [  ],
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -571,15 +656,18 @@
  ]
 					}
 ,
-					"patching_rect" : [ 366.0, 75.0, 84.0, 20.0 ],
+					"patching_rect" : [ 392.0, 178.0, 84.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
-						"globalpatchername" : "",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
 						"fontname" : "Arial",
-						"default_fontsize" : 12.0
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p prep-hslider"
@@ -595,7 +683,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 367.0, 75.0, 189.0, 20.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 393.0, 178.0, 189.0, 20.0 ],
 					"size" : 1.0
 				}
 
@@ -608,7 +697,7 @@
 					"maxclass" : "fpic",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 179.5, 471.0, 116.0 ]
+					"patching_rect" : [ 8.0, 288.5, 471.0, 116.0 ]
 				}
 
 			}
@@ -616,15 +705,16 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 18.0,
+					"frgb" : 0.0,
 					"id" : "obj-2",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 620.0, 222.0, 91.0, 48.0 ],
+					"patching_rect" : [ 639.0, 46.0, 91.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 52.0, 106.0, 91.0, 48.0 ],
+					"presentation_rect" : [ 52.0, 106.0, 91.0, 47.0 ],
 					"text" : "Start/stop\nDSP"
 				}
 
@@ -635,7 +725,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 576.0, 224.0, 45.0, 45.0 ],
+					"patching_rect" : [ 595.0, 48.0, 45.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 108.0, 45.0, 45.0 ]
 				}
@@ -651,10 +741,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 161.0, 14.0, 183.0, 27.0 ],
+					"patching_rect" : [ 162.0, 123.0, 169.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 136.0, 13.0, 183.0, 27.0 ],
-					"text" : "contact~ c 300. 1.5 0."
+					"presentation_rect" : [ 136.0, 13.0, 169.0, 27.0 ],
+					"text" : "touch~ c 150. 0.5 0."
 				}
 
 			}
@@ -668,7 +758,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 391.0, 14.0, 99.0, 27.0 ],
+					"patching_rect" : [ 392.0, 123.0, 99.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 391.0, 14.0, 99.0, 27.0 ],
 					"text" : "FireFader~"
@@ -685,7 +775,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 31.0, 16.0, 94.0, 27.0 ],
+					"patching_rect" : [ 32.0, 125.0, 94.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 15.0, 94.0, 27.0 ],
 					"text" : "grnd~ g 0."
@@ -696,8 +786,8 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
 					"hidden" : 1,
-					"midpoints" : [  ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -705,8 +795,9 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 40.5, 47.0, 129.0, 47.0, 151.0, 8.0, 170.5, 8.0 ],
+					"midpoints" : [ 41.5, 156.0, 130.0, 156.0, 152.0, 117.0, 171.5, 117.0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -714,8 +805,9 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 170.5, 47.0, 152.0, 47.0, 129.0, 8.0, 40.5, 8.0 ],
+					"midpoints" : [ 171.5, 156.0, 153.0, 156.0, 130.0, 117.0, 41.5, 117.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -723,8 +815,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [  ],
 					"source" : [ "obj-17", 1 ]
 				}
 
@@ -732,8 +824,9 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 334.5, 45.0, 361.0, 45.0, 379.0, 6.0, 400.5, 6.0 ],
+					"midpoints" : [ 321.5, 154.0, 353.0, 154.0, 371.0, 115.0, 401.5, 115.0 ],
 					"source" : [ "obj-17", 1 ]
 				}
 
@@ -741,8 +834,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
+					"disabled" : 0,
 					"hidden" : 1,
-					"midpoints" : [  ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -750,8 +843,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [  ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -759,11 +852,34 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
+					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 400.5, 45.0, 384.0, 45.0, 358.0, 6.0, 340.0, 6.0, 334.5, 6.0 ],
+					"midpoints" : [ 401.5, 154.0, 375.0, 154.0, 349.0, 115.0, 341.0, 115.0, 321.5, 115.0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "grnd~.maxpat",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "FireFader~.maxpat",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
+				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "touch~.maxpat",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ]
 	}
