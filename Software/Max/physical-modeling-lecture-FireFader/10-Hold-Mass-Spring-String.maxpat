@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 51.0, 137.0, 1569.0, 406.0 ],
+		"rect" : [ 24.0, 127.0, 1569.0, 406.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -130,7 +130,7 @@
 					"patching_rect" : [ 9.385939, 53.419533, 1258.364014, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 54.639935, 86.412537, 241.0, 248.0 ],
+					"presentation_rect" : [ 54.639935, 86.412537, 251.0, 248.0 ],
 					"text" : "At the left end, we have a ground object instead of a mass, so it never moves."
 				}
 
@@ -2182,36 +2182,36 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mass~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
+				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FireFader~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette",
+				"patcherrelativepath" : "../palette",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "link~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
+				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "prep-hslider-string.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/LSU/Teaching/4745/Presentations/Lecture1105",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/physical-modeling-lecture-FireFader",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "grnd~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
+				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}

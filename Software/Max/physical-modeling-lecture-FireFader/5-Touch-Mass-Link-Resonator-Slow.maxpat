@@ -1144,15 +1144,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-17", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1269,36 +1260,36 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "grnd~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
+				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FireFader~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
-				"patcherrelativepath" : "../../../Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette",
+				"patcherrelativepath" : "../palette",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "link~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
+				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mass~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
+				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "touch~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
+				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}

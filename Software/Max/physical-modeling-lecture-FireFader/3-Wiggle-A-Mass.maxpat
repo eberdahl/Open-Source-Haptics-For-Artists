@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 585.0, 284.0, 855.0, 596.0 ],
+		"rect" : [ 445.0, 199.0, 855.0, 359.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -683,7 +683,7 @@
 					"patching_rect" : [ 2.0, 264.0, 416.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 7,
-					"presentation_rect" : [ 694.0, 349.0, 133.0, 147.0 ],
+					"presentation_rect" : [ 694.0, 349.0, 138.0, 147.0 ],
 					"text" : "Initially, the linear link l has a stiffness of 50 and damping of 0.3, and the mass \"weighs\" 0.3kg."
 				}
 
@@ -1223,22 +1223,22 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mass~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
+				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FireFader~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette",
+				"patcherrelativepath" : "../palette",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "link~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
+				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
