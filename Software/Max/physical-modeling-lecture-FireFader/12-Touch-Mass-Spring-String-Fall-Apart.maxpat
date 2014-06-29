@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1452.0, 179.0, 1537.0, 397.0 ],
+		"rect" : [ -86.0, 123.0, 1660.0, 636.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -3463,7 +3463,7 @@
 					"patching_rect" : [ 7.921839, 6.419445, 1475.009399, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 8,
-					"presentation_rect" : [ 58.0, 12.0, 239.0, 328.0 ],
+					"presentation_rect" : [ 58.0, 12.0, 247.0, 328.0 ],
 					"text" : "If the links are changed to touch links, then the string can fall apart and synthesize noise."
 				}
 
@@ -4782,35 +4782,35 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "mass~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
 				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "FireFader~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette",
 				"patcherrelativepath" : "../palette",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "touch~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
 				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "prep-hslider-string2.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/physical-modeling-lecture-FireFader",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/physical-modeling-lecture-FireFader",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "grnd~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
 				"patcherrelativepath" : "../palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
