@@ -25,9 +25,11 @@
 
 
 // Divide the torque for the rotational motor by 2^(BITSTOSHIFTTORQUE)
+// The default value is 1 (e.g. for a typical 12V DC motor)
 #define BITSTOSHIFTTORQUE 1
 
 // Divide the angular measurement by 2^(BITSTOSHIFTANGLESENSING)
+// The default value is 2 (e.g. for a rotary encoder with 1000 counts/revolution)
 #define BITSTOSHIFTANGLESENSING 2
 
 
@@ -118,7 +120,7 @@ void setup()
   pinMode (encoder0PinB,INPUT);
   attachInterrupt(0, CountA, CHANGE);
   attachInterrupt(1, CountB, CHANGE);
-  encoder0Pos = 2048;  // Start counting at zero meters
+  encoder0Pos = 128 << BITSTOSHIFTANGLESENSING;  // Start counting at zero meters
 
   
   // Setup capacitive sensing
