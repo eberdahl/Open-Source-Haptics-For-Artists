@@ -1,6 +1,4 @@
-// Haptics firmware for the FireFader
-//
-// 8-bit numbers are used to simplify the code here and in the host application on the laptop.
+// Detents and more demo firmware for rotary device
 //
 // Some noise in the ADC can affect the sensor measurements.  We can greatly reduce the noise by using 
 // averaging techniques (i.e. by low-pass filtering the signals).
