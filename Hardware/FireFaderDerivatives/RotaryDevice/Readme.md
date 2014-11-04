@@ -4,7 +4,7 @@ However, the sensing works differently.  Instead of connecting an analog voltage
 
 In summary, for the rotary motor we have the following:
 
-blue - ground
+blue-ground
 
 white-channel A
 
