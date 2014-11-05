@@ -65,8 +65,7 @@ int extraAnalogInB = currentPinB;
 // The following pin is for measuring the position of the fader.
 int potPinA = 2;        // for Nano v2.3 and 3.0, this is pin 3
 int potPinB = 3;        // for Nano v2.3 and 3.0, this is pin 2 (or 5 on old Nano)
-
-
+unsigned long long potPinBLPF = 0;
 
 int capSensePinA = 9;        // The capacitive sensing "input" is at pin D9.
 int capSensePinB = 2;        // The capacitive sensing "input" is at pin D2.
@@ -402,8 +401,9 @@ void loop()
   oldPotValueB = potValueB;
 
   // Average the motor position input for the fader 8 times.
-  potValueB = analogReadAveraging(potPinB, 8, 3);         // This takes about 150 microseconds and gives result in range [0 1023]
-  
+  //potValueB = analogReadAveraging(potPinB, 8, 3);         // FIR filter -- This takes about 150 microseconds and gives result in range [0 1023]
+  potPinBLPF = (63*potPinBLPF)/64 + analogReadAveraging(potPinB, 8, 3);  // IIR+FIR filter
+  potValueB = potPinBLPF / 64; // scale back into the range [0 1023]
 
   // We actually are not using a potentiometer to measure the position of the rotary motor, but we leave the variable
   // name here for convenience.  Optionally the magnitude can be adjusted to match for different sensors.  (The offset of 2 is for
@@ -467,7 +467,8 @@ void loop()
   // Standard detents
   //unsignedForceA += detent(myModulus(potValueA, 400), 40, 3);
   //unsignedForceA += detent(myModulus(potValueA, 400), 20, 5);
-  unsignedForceA += detent(myModulus(potValueA, 50), 10, 7);
+  unsignedForceA += detent(myModulus(potValueA, 50), 12, 5);
+  //unsignedForceA += detent(myModulus(potValueA, 50), 10, 7);
   //unsignedForceA += detent(myModulus(potValueA, 24), 6, 10);
   //unsignedForceA += detent(myModulus(potValueA, 12), 3, 20);   // For this one, the detents are so small that they almost feel like friction instead.
   //unsignedForceA += detent(myModulus(potValueA, 4), 1, 40);
@@ -534,7 +535,7 @@ void loop()
   
   
   // Set a debug value to watch ...
-  debugValue = potValueA;
+  debugValue = potValueB;
   //debugValue = velEstB;
   //debugValue = minandmax(velEstA,-100,100);
   
