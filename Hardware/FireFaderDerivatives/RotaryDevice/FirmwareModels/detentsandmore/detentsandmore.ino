@@ -511,14 +511,14 @@ void loop()
   // Standard detents
   //unsignedForceB += detent(myModulus(potValueB, 400), 30, 6);
   //unsignedForceB += detent(myModulus(potValueB, 400), 20, 8);
-  //unsignedForceB += detent(myModulus(potValueB, 50), 10, 15);
+  unsignedForceB += detent(myModulus(potValueB, 50), 10, 15);
   //unsignedForceB += detent(myModulus(potValueB, 24), 6, 23);
   //unsignedForceB += detent(myModulus(potValueB, 12), 3, 42);   // For this one, the detents are so small that they almost feel like friction instead.
   //unsignedForceB += detent(myModulus(potValueB, 4), 2, 80);    // For this one, the detents are so small that they almost feel like friction instead.
 
   // Spots of friction
   //unsignedForceB += -(minandmax(velEstB,-70,70) << 1) * (myModulus(potValueB, 100) < 5);   // very thin spots (every 5 counts out of 100)
-  unsignedForceB += -(minandmax(velEstB,-70,70) << 1) * (myModulus(potValueB, 100) < 20);   // wider spots (every 20 counts out of 100)
+  //unsignedForceB += -(minandmax(velEstB,-70,70) << 1) * (myModulus(potValueB, 100) < 20);   // wider spots (every 20 counts out of 100)
   //unsignedForceB += -(minandmax(velEstB,-70,70) << 1) * (myModulus(potValueB, 100) < 80);   // very wide spots (every 80 counts out of 100)
 
 
