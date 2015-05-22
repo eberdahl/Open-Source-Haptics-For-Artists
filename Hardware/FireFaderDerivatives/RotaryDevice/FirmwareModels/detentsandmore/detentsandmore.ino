@@ -65,7 +65,7 @@ int extraAnalogInB = currentPinB;
 // The following pin is for measuring the position of the fader.
 int potPinA = 2;        // for Nano v2.3 and 3.0, this is pin 3
 int potPinB = 3;        // for Nano v2.3 and 3.0, this is pin 2 (or 5 on old Nano)
-unsigned long long potPinBLPF = 0;
+unsigned long potPinBLPF = 0;
 
 int capSensePinA = 9;        // The capacitive sensing "input" is at pin D9.
 int capSensePinB = 2;        // The capacitive sensing "input" is at pin D2.
@@ -512,7 +512,7 @@ void loop()
   // Standard detents
   //unsignedForceB += detent(myModulus(potValueB, 400), 30, 6);
   //unsignedForceB += detent(myModulus(potValueB, 400), 20, 8);
-  unsignedForceB += detent(myModulus(potValueB, 50), 10, 15);
+  unsignedForceB += detent(myModulus(potValueB, 50), 10, 15);  // default feedback
   //unsignedForceB += detent(myModulus(potValueB, 24), 6, 23);
   //unsignedForceB += detent(myModulus(potValueB, 12), 3, 42);   // For this one, the detents are so small that they almost feel like friction instead.
   //unsignedForceB += detent(myModulus(potValueB, 4), 2, 80);    // For this one, the detents are so small that they almost feel like friction instead.

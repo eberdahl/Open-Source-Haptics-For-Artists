@@ -4942,7 +4942,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 182.0, 249.0, 73.0, 18.0 ],
-					"text" : "serial e 57600"
+					"text" : "serial c 57600"
 				}
 
 			}
