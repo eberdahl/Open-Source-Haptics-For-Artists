@@ -19,6 +19,7 @@ To use OSHA, install git and then run the following command:
 
 git clone --recursive https://github.com/eberdahl/Open-Source-Haptics-For-Artists.git
 
+cd Open-Source-Haptics-For-Artists
 
 To update this repository, run the following from the root directory:
 
