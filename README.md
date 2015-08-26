@@ -21,6 +21,7 @@ git clone --recursive https://github.com/eberdahl/Open-Source-Haptics-For-Artist
 
 To update this repository, run the following from the root directory:
 git pull
+
 git submodule update
 
 In general, please use the Google group for asking questions:
