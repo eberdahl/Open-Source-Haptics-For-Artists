@@ -2,7 +2,7 @@ Max/MSP support is implemented via the HSP ("Haptic Signal Processing") package
 
 Contributors: Edgar Berdahl and Alexandros Kontogeorgakopoulos
 
-For Max/MSP 5 and 6.
+For Max/MSP 5, 6 and 7.
 
 It has been tested on Mac OS X with Intel processors.  The FireFader works in Windows (but to use the NovInt Falcon device in Windows, someone would need to recompile the external object "np_nifalcon.mxo").
 
@@ -35,4 +35,4 @@ Note: If the FireFader is plugged in to a Mac before the Mac is booted up, it wi
 
 TROUBLESHOOTING
 ---------------
-If it isn’t working the way you expect, make sure that you precisely followed each of the above steps.
+If it isn’t working the way you expect, make sure that you precisely followed each of the above steps.  Then, if there are still difficulties (such as models not feeling the way that you think they should feel), close all other applications, reboot the computer, and run only Max.  Finally, it can also help (particularly if there are some animated GUI objects in the Max patch) to minimize the Max patch so that Max isn't running any drawing routines.  The reason for this is that the graphics events are running at the same priority level as the serial object.
