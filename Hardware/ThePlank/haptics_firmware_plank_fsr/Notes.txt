@@ -1,0 +1,27 @@
+To use The Plank with the Open-Source-Haptics-For-Artists repository, it's necessary to have a way
+to disable the force feedback if the user isn't touching the device.  This can be accomplished
+by using the FSR as a sensor to check if the user is exerting pressure on it.
+
+
+• Build the circuit as shown in Figure 5 of the Computer Music Journal article
+  "The FireFader: Simple, Open-Source, and Reconfigurable Haptic Force Feedback for Musicians"
+  replacing "Motor A."  Instead of connecting the 2nd pin of the potentiometer to Arduino pin A2,
+  connect the voltage output of the Hall-effect sensor to Arduino pin A2.
+• Repeat the same procedure analogously for a second Plank motor as "Motor B."
+
+
+
+USE THE ARDUINO MICRO FOR BUILDING THIS WITH THE MOTOR DRIVER http://www.gravitech.us/2mwfecoadfor.html, ALSO AVAILABLE THROUGH MOUSER.
+
+
+
+// Anyone trying to use The Plank with Open-Source-Haptics-For-Artists should first try the 
+// Synth-A-Modeler models, which are compatible with this firmware.  To do this, run 
+// 'make jackqt' inside the SaM subdirectory of the part of the repo
+// https://github.com/eberdahl/Open-Source-Haptics-For-Artists/tree/master/Software/Synth-A-Modeler
+// and visit https://ccrma.stanford.edu/wiki/SynthAModelerFireFaderLab for additional instructions
+// to set that up.
+// 
+// After getting those working, then try the models in Max using the FireFader~ object to interface
+// with the firmware--see
+// https://github.com/eberdahl/Open-Source-Haptics-For-Artists/blob/master/Software/Max/Readme.txt

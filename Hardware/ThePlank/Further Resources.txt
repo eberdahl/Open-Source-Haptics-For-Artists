@@ -1,0 +1,5 @@
+Please see the papers for more info!
+
+William Verplank. 2005. Haptic music exercises. In Proceedings of the 2005 conference on New interfaces for musical expression (NIME '05). National University of Singapore, Singapore, Singapore, 256-257.
+
+Bill Verplank, Michael Gurevich, and Max Mathews. 2002. The Plank: designing a simple haptic controller. In Proceedings of the 2002 conference on New interfaces for musical expression (NIME '02), Eoin Brazil (Ed.). National University of Singapore, Singapore, Singapore, 1-4.
