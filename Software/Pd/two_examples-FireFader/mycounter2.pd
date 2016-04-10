@@ -1,0 +1,22 @@
+#N canvas 182 418 450 300 10;
+#X text 19 -44 Since counter is gone in pd vanilla;
+#X obj 100 8 inlet;
+#X obj 38 7 inlet;
+#X obj 287 13 inlet;
+#X obj 167 9 inlet;
+#X obj 229 10 inlet;
+#X floatatom 49 101 5 0 0 0 - - -, f 5;
+#X obj 49 132 + 1;
+#X msg 71 166 set \$1;
+#X obj 20 71 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 162 60 set -1;
+#X obj 68 221 outlet;
+#X connect 2 0 6 0;
+#X connect 4 0 10 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 0 11 0;
+#X connect 8 0 6 0;
+#X connect 9 0 6 0;
+#X connect 10 0 6 0;
