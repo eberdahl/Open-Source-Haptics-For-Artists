@@ -1,0 +1,1 @@
+You need to have comport.pd_linux in this directory also.  To get it, go into the comport directory and run make, then copy comport.pd_linux into here.

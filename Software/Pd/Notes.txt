@@ -1,5 +1,6 @@
 PD IS NOT OFFICIALLY SUPPORTED !!!!!
 
+If there are any compiled SaM patches here, in order to use them, you will have to add two_examples-FireFader to the pd path.
 
 The pure data patches are not currently maintained for these reasons:
  ¥ The Max/MSP scheduler is able to run a little bit faster than the Pd scheduler, so the feedback control works a little bit better.
