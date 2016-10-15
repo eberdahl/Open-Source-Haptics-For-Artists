@@ -150,7 +150,7 @@
 #X obj 10 53 Uzi 1000;
 #X obj 10 33 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 10 79 counter 999;
+#X obj 10 79 mycounter2 999;
 #X obj 10 158 - 500;
 #X floatatom 10 106 5 0 0 0 - - -;
 #X obj 10 131 t f f;
