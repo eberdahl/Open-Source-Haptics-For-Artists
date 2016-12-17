@@ -20,3 +20,25 @@ To get it to work on your own Mac
 2. Set the "Signal Vector Size" to 1 in the DSP Settings.
 3. Set the "Event Interval (ms)" to 1 and the "Scheduler Interval (ms)" to 1 in the Preferences.
 
+
+
+Note on Haptics Processing
+--------------------------
+When patches have graphical elements (particularly with anything animated), they can interfere with the haptics processing, which can make the haptics feel worse.
+   WORKAROUND 1: Minimize the patch.  Then the graphics functions aren't being called
+                 anymore, so they can't interfere with the haptics processing.
+   WORKAROUND 2: See 200-Separate-Haptics-Computations.maxpat for a trick using poly~
+                 that seems to fix this issue.
+
+
+
+Other Notes
+-----------
+• Be careful not to have multiple patches open at the same time that are trying to access the same haptic device.  Weird things will happen.
+
+
+
+
+When you want to finish a project
+---------------------------------
+See 200-Separate-Haptics-Computations.maxpat for a technique using poly~ for making the haptics processing robust despite any graphics running in the Max patches.  This also allows objects besides the haptics objects to run with a standard and more efficient signal vector size.
