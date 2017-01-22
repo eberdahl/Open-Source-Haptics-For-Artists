@@ -1,0 +1,7 @@
+The FireFader is a haptic device, whose electronics can be easily realized using a simple breadboard.  In our opinion, the PCB is not really part of the original concept of the FireFader.  However, some folks have been asking for the PCB design, with the potential for creating other derivative designs, which is a nice possibility, so the PCB version is posted here as well.
+
+This design is specifically for the ALPS RS60N11M9A0F.  This specific part might no longer be available new; however, new ALPS parts with a very similar part number (that to us are indistinguishable) appear to be drop-in replacements.
+
+Additional notes:
+• The schematic part symbol in the .brd file is not accurate; however, the manufactured board has verified as working.
+• There might potentially be other issues with the ALPS-motorfader.lbr which was found on the Internet and whose footprint had to be modified in order to generate correct Gerber files.
