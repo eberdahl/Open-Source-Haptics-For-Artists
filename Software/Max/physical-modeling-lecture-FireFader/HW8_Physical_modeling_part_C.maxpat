@@ -2,10 +2,11 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
-			"minor" : 1,
-			"revision" : 3,
-			"architecture" : "x86"
+			"major" : 7,
+			"minor" : 2,
+			"revision" : 5,
+			"architecture" : "x64",
+			"modernui" : 1
 		}
 ,
 		"rect" : [ 66.0, 158.0, 1081.0, 618.0 ],
@@ -14,20 +15,44 @@
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-10",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 305.0, 120.0, 406.0, 33.0 ],
+					"presentation_rect" : [ 243.0, 159.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Hint: With the patch initially locked, double-click on the \"p resonators-lt~\", \"p reseonators-lb~\", etc. objects in order to open them and see inside."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -37,7 +62,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 191.0, 501.5, 85.0, 20.0 ],
+					"patching_rect" : [ 191.0, 501.5, 85.0, 22.0 ],
+					"style" : "",
 					"text" : "loadmess 100"
 				}
 
@@ -46,13 +72,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
 					"id" : "obj-9",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 22.0, 44.0, 842.0, 47.0 ],
+					"style" : "",
 					"text" : "Edit the frequencies of each of the twenty resonator~ objects, which are stored in the four subpatches below named resonators-lt~, resonators-rt~, resonators-lb~, and resonators-rb~. You are effectively designing/tuning your own four musical instruments. They should sound good when played together. Make sure you experiment with changing the decay times. (We recommend not changing the masses -- currently they are all set to 0.01kg, i.e. 10g))."
 				}
 
@@ -64,7 +90,8 @@
 					"id" : "obj-6",
 					"maxclass" : "fpic",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 22.0, 120.0, 262.0, 200.0 ]
 				}
 
@@ -82,10 +109,11 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 6,
-							"minor" : 1,
-							"revision" : 3,
-							"architecture" : "x86"
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
 						}
 ,
 						"rect" : [ 827.0, 281.0, 445.0, 320.0 ],
@@ -94,30 +122,38 @@
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
-						"gridonopen" : 0,
+						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 0,
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"imprint" : 0,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
-									"frgb" : 0.0,
 									"id" : "obj-11",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 74.0, 246.0, 340.5, 33.0 ],
+									"style" : "",
 									"text" : "Remember, the second argument is the resonance frequency in Hz and the third argument is the decay time in seconds."
 								}
 
@@ -133,6 +169,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 108.0, 171.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb5 2797. 0.7 0.01"
 								}
 
@@ -148,6 +185,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 82.0, 142.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb4 1964. 0.5 0.01"
 								}
 
@@ -163,6 +201,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 32.0, 87.0, 162.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb2 610. 0.7 0.01"
 								}
 
@@ -178,6 +217,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 58.0, 114.0, 168.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb3 1187. 0.3 0.01"
 								}
 
@@ -193,6 +233,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 12.0, 58.0, 162.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb1 228. 0.5 0.01"
 								}
 
@@ -204,7 +245,8 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 12.0, 220.0, 25.0, 25.0 ]
+									"patching_rect" : [ 12.0, 220.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -216,7 +258,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 13.0, 13.0, 25.0, 25.0 ]
+									"patching_rect" : [ 13.0, 13.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -314,23 +357,19 @@
  ]
 					}
 ,
-					"patching_rect" : [ 847.5, 354.0, 143.0, 27.0 ],
+					"patching_rect" : [ 847.5, 354.0, 143.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1123.5, 193.0, 121.0, 67.0 ],
+					"presentation_rect" : [ 1123.5, 193.0, 121.0, 69.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"default_fontsize" : 12.0,
 						"description" : "",
 						"digest" : "",
-						"fontface" : 0,
-						"fontname" : "Arial",
-						"fontsize" : 12.0,
 						"globalpatchername" : "",
+						"style" : "",
 						"tags" : ""
 					}
 ,
+					"style" : "",
 					"text" : "p resonators-rb~"
 				}
 
@@ -345,9 +384,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 623.5, 354.0, 195.0, 27.0 ],
+					"patching_rect" : [ 623.5, 354.0, 195.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 899.5, 193.0, 195.0, 27.0 ],
+					"presentation_rect" : [ 899.5, 193.0, 195.0, 29.0 ],
+					"style" : "",
 					"text" : "touch~ t 200. 0.2 0.015"
 				}
 
@@ -365,10 +405,11 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 6,
-							"minor" : 1,
-							"revision" : 3,
-							"architecture" : "x86"
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
 						}
 ,
 						"rect" : [ 590.0, 364.0, 368.0, 306.0 ],
@@ -377,30 +418,38 @@
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
-						"gridonopen" : 0,
+						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 0,
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"imprint" : 0,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
-									"frgb" : 0.0,
 									"id" : "obj-11",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 5.0, 258.0, 340.5, 33.0 ],
+									"style" : "",
 									"text" : "Remember, the second argument is the resonance frequency in Hz and the third argument is the decay time in seconds."
 								}
 
@@ -416,6 +465,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 107.0, 173.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb5 3519. 0.7 0.01"
 								}
 
@@ -431,6 +481,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 81.0, 147.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb4 2444. 0.5 0.01"
 								}
 
@@ -446,6 +497,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 37.0, 94.0, 162.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb2 771. 0.7 0.01"
 								}
 
@@ -461,6 +513,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 59.0, 121.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb3 1497. 0.3 0.01"
 								}
 
@@ -476,6 +529,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 13.0, 66.0, 162.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb1 288. 0.5 0.01"
 								}
 
@@ -487,7 +541,8 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 13.0, 223.0, 25.0, 25.0 ]
+									"patching_rect" : [ 13.0, 223.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -499,7 +554,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 13.0, 13.0, 25.0, 25.0 ]
+									"patching_rect" : [ 13.0, 13.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -597,23 +653,19 @@
  ]
 					}
 ,
-					"patching_rect" : [ 191.0, 436.0, 141.0, 27.0 ],
+					"patching_rect" : [ 191.0, 436.0, 141.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 377.5, 270.0, 121.0, 67.0 ],
+					"presentation_rect" : [ 377.5, 270.0, 121.0, 69.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"default_fontsize" : 12.0,
 						"description" : "",
 						"digest" : "",
-						"fontface" : 0,
-						"fontname" : "Arial",
-						"fontsize" : 12.0,
 						"globalpatchername" : "",
+						"style" : "",
 						"tags" : ""
 					}
 ,
+					"style" : "",
 					"text" : "p resonators-lb~"
 				}
 
@@ -628,9 +680,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 375.5, 436.0, 195.0, 27.0 ],
+					"patching_rect" : [ 375.5, 436.0, 195.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 602.5, 270.0, 195.0, 27.0 ],
+					"presentation_rect" : [ 602.5, 270.0, 195.0, 29.0 ],
+					"style" : "",
 					"text" : "touch~ t 200. 0.2 0.015"
 				}
 
@@ -648,10 +701,11 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 6,
-							"minor" : 1,
-							"revision" : 3,
-							"architecture" : "x86"
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
 						}
 ,
 						"rect" : [ 776.0, 261.0, 98.0, 128.0 ],
@@ -660,19 +714,27 @@
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
-						"gridonopen" : 0,
+						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 0,
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"imprint" : 0,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -685,10 +747,11 @@
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
-											"major" : 6,
-											"minor" : 1,
-											"revision" : 3,
-											"architecture" : "x86"
+											"major" : 7,
+											"minor" : 2,
+											"revision" : 5,
+											"architecture" : "x64",
+											"modernui" : 1
 										}
 ,
 										"rect" : [ 776.0, 261.0, 208.0, 283.0 ],
@@ -697,19 +760,27 @@
 										"default_fontsize" : 12.0,
 										"default_fontface" : 0,
 										"default_fontname" : "Arial",
-										"gridonopen" : 0,
+										"gridonopen" : 1,
 										"gridsize" : [ 15.0, 15.0 ],
-										"gridsnaponopen" : 0,
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
 										"statusbarvisible" : 2,
 										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
 										"boxanimatetime" : 200,
-										"imprint" : 0,
 										"enablehscroll" : 1,
 										"enablevscroll" : 1,
 										"devicewidth" : 0.0,
 										"description" : "",
 										"digest" : "",
 										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
 													"fontname" : "Arial",
@@ -722,10 +793,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -734,19 +806,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -757,6 +837,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -768,7 +849,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -780,7 +862,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -794,6 +877,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 98.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 30. Hz"
 																}
 
@@ -840,18 +924,14 @@
 ,
 													"patching_rect" : [ 10.0, 82.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -868,10 +948,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -880,19 +961,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -903,6 +992,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -914,7 +1004,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -926,7 +1017,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -940,6 +1032,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 92.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 5. Hz"
 																}
 
@@ -986,18 +1079,14 @@
 ,
 													"patching_rect" : [ 10.0, 211.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -1014,10 +1103,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -1026,19 +1116,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -1049,6 +1147,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -1060,7 +1159,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -1072,7 +1172,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -1086,6 +1187,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 98.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 10. Hz"
 																}
 
@@ -1132,18 +1234,14 @@
 ,
 													"patching_rect" : [ 10.0, 170.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -1160,10 +1258,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -1172,19 +1271,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -1195,6 +1302,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -1206,7 +1314,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -1218,7 +1327,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -1232,6 +1342,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 98.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 15. Hz"
 																}
 
@@ -1278,18 +1389,14 @@
 ,
 													"patching_rect" : [ 10.0, 137.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -1306,10 +1413,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -1318,19 +1426,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -1341,6 +1457,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -1352,7 +1469,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -1364,7 +1482,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -1378,6 +1497,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 98.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 20. Hz"
 																}
 
@@ -1424,18 +1544,14 @@
 ,
 													"patching_rect" : [ 10.0, 109.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -1450,6 +1566,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
 													"patching_rect" : [ 10.0, 42.0, 36.0, 20.0 ],
+													"style" : "",
 													"text" : "*~ 1."
 												}
 
@@ -1461,7 +1578,8 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 10.0, 252.0, 25.0, 25.0 ]
+													"patching_rect" : [ 10.0, 252.0, 25.0, 25.0 ],
+													"style" : ""
 												}
 
 											}
@@ -1473,7 +1591,8 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 10.0, 12.0, 25.0, 25.0 ]
+													"patching_rect" : [ 10.0, 12.0, 25.0, 25.0 ],
+													"style" : ""
 												}
 
 											}
@@ -1546,18 +1665,14 @@
 ,
 									"patching_rect" : [ 10.0, 68.0, 76.0, 20.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontface" : 0,
-										"default_fontname" : "Arial",
-										"default_fontsize" : 12.0,
 										"description" : "",
 										"digest" : "",
-										"fontface" : 0,
-										"fontname" : "Arial",
-										"fontsize" : 12.0,
 										"globalpatchername" : "",
+										"style" : "",
 										"tags" : ""
 									}
 ,
+									"style" : "",
 									"text" : "p highpass~"
 								}
 
@@ -1572,6 +1687,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 10.0, 42.0, 69.0, 20.0 ],
+									"style" : "",
 									"text" : "*~ 200000."
 								}
 
@@ -1583,7 +1699,8 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 94.0, 25.0, 25.0 ]
+									"patching_rect" : [ 10.0, 94.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -1595,7 +1712,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 10.0, 12.0, 25.0, 25.0 ]
+									"patching_rect" : [ 10.0, 12.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -1630,20 +1748,16 @@
  ]
 					}
 ,
-					"patching_rect" : [ 847.5, 525.0, 41.0, 20.0 ],
+					"patching_rect" : [ 847.5, 525.0, 41.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"default_fontsize" : 12.0,
 						"description" : "",
 						"digest" : "",
-						"fontface" : 0,
-						"fontname" : "Arial",
-						"fontsize" : 12.0,
 						"globalpatchername" : "",
+						"style" : "",
 						"tags" : ""
 					}
 ,
+					"style" : "",
 					"text" : "p hp~"
 				}
 
@@ -1651,12 +1765,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-12",
+					"interpinlet" : 1,
 					"maxclass" : "gain~",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 847.5, 525.0, 42.0, 67.0 ]
+					"patching_rect" : [ 847.5, 525.0, 42.0, 67.0 ],
+					"style" : ""
 				}
 
 			}
@@ -1673,10 +1789,11 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 6,
-							"minor" : 1,
-							"revision" : 3,
-							"architecture" : "x86"
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
 						}
 ,
 						"rect" : [ 826.0, 208.0, 427.0, 371.0 ],
@@ -1685,30 +1802,38 @@
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
-						"gridonopen" : 0,
+						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 0,
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"imprint" : 0,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
-									"frgb" : 0.0,
 									"id" : "obj-11",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 286.0, 340.5, 33.0 ],
+									"style" : "",
 									"text" : "Remember, the second argument is the resonance frequency in Hz and the third argument is the decay time in seconds."
 								}
 
@@ -1724,6 +1849,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 77.0, 179.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb5 3998. 0.7 0.01"
 								}
 
@@ -1739,6 +1865,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 61.0, 152.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb4 2953. 0.5 0.01"
 								}
 
@@ -1754,6 +1881,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 30.0, 98.0, 162.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb2 903. 0.7 0.01"
 								}
 
@@ -1769,6 +1897,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 48.0, 125.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb3 1796. 0.3 0.01"
 								}
 
@@ -1784,6 +1913,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 13.0, 71.0, 162.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb1 341. 0.5 0.01"
 								}
 
@@ -1795,7 +1925,8 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 13.0, 245.0, 25.0, 25.0 ]
+									"patching_rect" : [ 13.0, 245.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -1807,7 +1938,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 13.0, 13.0, 25.0, 25.0 ]
+									"patching_rect" : [ 13.0, 13.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -1905,23 +2037,19 @@
  ]
 					}
 ,
-					"patching_rect" : [ 695.5, 259.0, 138.0, 27.0 ],
+					"patching_rect" : [ 695.5, 259.0, 138.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 469.5, 109.0, 121.0, 47.0 ],
+					"presentation_rect" : [ 469.5, 109.0, 121.0, 49.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"default_fontsize" : 12.0,
 						"description" : "",
 						"digest" : "",
-						"fontface" : 0,
-						"fontname" : "Arial",
-						"fontsize" : 12.0,
 						"globalpatchername" : "",
+						"style" : "",
 						"tags" : ""
 					}
 ,
+					"style" : "",
 					"text" : "p resonators-rt~"
 				}
 
@@ -1936,9 +2064,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 471.5, 259.0, 195.0, 27.0 ],
+					"patching_rect" : [ 471.5, 259.0, 195.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 371.5, 41.0, 195.0, 27.0 ],
+					"presentation_rect" : [ 371.5, 41.0, 195.0, 29.0 ],
+					"style" : "",
 					"text" : "touch~ t 200. 0.2 0.015"
 				}
 
@@ -1956,10 +2085,11 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 6,
-							"minor" : 1,
-							"revision" : 3,
-							"architecture" : "x86"
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
 						}
 ,
 						"rect" : [ 561.0, 307.0, 411.0, 299.0 ],
@@ -1968,30 +2098,38 @@
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
-						"gridonopen" : 0,
+						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 0,
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"imprint" : 0,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
-									"frgb" : 0.0,
 									"id" : "obj-11",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 55.0, 256.0, 340.5, 33.0 ],
+									"style" : "",
 									"text" : "Remember, the second argument is the resonance frequency in Hz and the third argument is the decay time in seconds."
 								}
 
@@ -2003,7 +2141,8 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 13.0, 260.0, 25.0, 25.0 ]
+									"patching_rect" : [ 13.0, 260.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -2015,7 +2154,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 13.0, 11.0, 25.0, 25.0 ]
+									"patching_rect" : [ 13.0, 11.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -2030,6 +2170,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 95.0, 198.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb5 3186. 0.7 0.01"
 								}
 
@@ -2045,6 +2186,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 70.0, 170.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb4 2199. 0.5 0.01"
 								}
 
@@ -2060,6 +2202,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 29.0, 112.0, 162.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb2 694. 0.7 0.01"
 								}
 
@@ -2075,6 +2218,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 48.0, 142.0, 169.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb3 1348. 0.3 0.01"
 								}
 
@@ -2090,6 +2234,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 13.0, 80.0, 162.0, 20.0 ],
+									"style" : "",
 									"text" : "resonator~ rb1 261. 0.5 0.01"
 								}
 
@@ -2188,23 +2333,19 @@
  ]
 					}
 ,
-					"patching_rect" : [ 27.5, 354.0, 136.0, 27.0 ],
+					"patching_rect" : [ 27.5, 354.0, 136.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 333.0, 373.0, 121.0, 47.0 ],
+					"presentation_rect" : [ 333.0, 373.0, 121.0, 49.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"default_fontsize" : 12.0,
 						"description" : "",
 						"digest" : "",
-						"fontface" : 0,
-						"fontname" : "Arial",
-						"fontsize" : 12.0,
 						"globalpatchername" : "",
+						"style" : "",
 						"tags" : ""
 					}
 ,
+					"style" : "",
 					"text" : "p resonators-lt~"
 				}
 
@@ -2215,7 +2356,8 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 525.5, 547.0, 45.0, 45.0 ]
+					"patching_rect" : [ 525.5, 547.0, 45.0, 45.0 ],
+					"style" : ""
 				}
 
 			}
@@ -2232,10 +2374,11 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 6,
-							"minor" : 1,
-							"revision" : 3,
-							"architecture" : "x86"
+							"major" : 7,
+							"minor" : 2,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
 						}
 ,
 						"rect" : [ 776.0, 261.0, 97.0, 134.0 ],
@@ -2244,19 +2387,27 @@
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
-						"gridonopen" : 0,
+						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 0,
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"imprint" : 0,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -2269,10 +2420,11 @@
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
-											"major" : 6,
-											"minor" : 1,
-											"revision" : 3,
-											"architecture" : "x86"
+											"major" : 7,
+											"minor" : 2,
+											"revision" : 5,
+											"architecture" : "x64",
+											"modernui" : 1
 										}
 ,
 										"rect" : [ 776.0, 261.0, 208.0, 283.0 ],
@@ -2281,19 +2433,27 @@
 										"default_fontsize" : 12.0,
 										"default_fontface" : 0,
 										"default_fontname" : "Arial",
-										"gridonopen" : 0,
+										"gridonopen" : 1,
 										"gridsize" : [ 15.0, 15.0 ],
-										"gridsnaponopen" : 0,
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
 										"statusbarvisible" : 2,
 										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
 										"boxanimatetime" : 200,
-										"imprint" : 0,
 										"enablehscroll" : 1,
 										"enablevscroll" : 1,
 										"devicewidth" : 0.0,
 										"description" : "",
 										"digest" : "",
 										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
 													"fontname" : "Arial",
@@ -2306,10 +2466,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -2318,19 +2479,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -2341,6 +2510,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -2352,7 +2522,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2364,7 +2535,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2378,6 +2550,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 98.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 30. Hz"
 																}
 
@@ -2424,18 +2597,14 @@
 ,
 													"patching_rect" : [ 10.0, 82.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -2452,10 +2621,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -2464,19 +2634,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -2487,6 +2665,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -2498,7 +2677,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2510,7 +2690,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2524,6 +2705,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 92.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 5. Hz"
 																}
 
@@ -2570,18 +2752,14 @@
 ,
 													"patching_rect" : [ 10.0, 211.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -2598,10 +2776,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -2610,19 +2789,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -2633,6 +2820,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -2644,7 +2832,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2656,7 +2845,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2670,6 +2860,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 98.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 10. Hz"
 																}
 
@@ -2716,18 +2907,14 @@
 ,
 													"patching_rect" : [ 10.0, 170.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -2744,10 +2931,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -2756,19 +2944,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -2779,6 +2975,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -2790,7 +2987,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2802,7 +3000,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2816,6 +3015,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 98.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 15. Hz"
 																}
 
@@ -2862,18 +3062,14 @@
 ,
 													"patching_rect" : [ 10.0, 137.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -2890,10 +3086,11 @@
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
-															"major" : 6,
-															"minor" : 1,
-															"revision" : 3,
-															"architecture" : "x86"
+															"major" : 7,
+															"minor" : 2,
+															"revision" : 5,
+															"architecture" : "x64",
+															"modernui" : 1
 														}
 ,
 														"rect" : [ 863.0, 388.0, 226.0, 196.0 ],
@@ -2902,19 +3099,27 @@
 														"default_fontsize" : 12.0,
 														"default_fontface" : 0,
 														"default_fontname" : "Arial",
-														"gridonopen" : 0,
+														"gridonopen" : 1,
 														"gridsize" : [ 15.0, 15.0 ],
-														"gridsnaponopen" : 0,
+														"gridsnaponopen" : 1,
+														"objectsnaponopen" : 1,
 														"statusbarvisible" : 2,
 														"toolbarvisible" : 1,
+														"lefttoolbarpinned" : 0,
+														"toptoolbarpinned" : 0,
+														"righttoolbarpinned" : 0,
+														"bottomtoolbarpinned" : 0,
+														"toolbars_unpinned_last_save" : 0,
+														"tallnewobj" : 0,
 														"boxanimatetime" : 200,
-														"imprint" : 0,
 														"enablehscroll" : 1,
 														"enablevscroll" : 1,
 														"devicewidth" : 0.0,
 														"description" : "",
 														"digest" : "",
 														"tags" : "",
+														"style" : "",
+														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
 																	"fontname" : "Arial",
@@ -2925,6 +3130,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 28.0, 110.0, 32.5, 20.0 ],
+																	"style" : "",
 																	"text" : "-~"
 																}
 
@@ -2936,7 +3142,8 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 19.0, 147.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2948,7 +3155,8 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ]
+																	"patching_rect" : [ 25.0, 24.0, 25.0, 25.0 ],
+																	"style" : ""
 																}
 
 															}
@@ -2962,6 +3170,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
 																	"patching_rect" : [ 52.0, 66.0, 98.0, 20.0 ],
+																	"style" : "",
 																	"text" : "onepole~ 20. Hz"
 																}
 
@@ -3008,18 +3217,14 @@
 ,
 													"patching_rect" : [ 10.0, 109.0, 76.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"default_fontface" : 0,
-														"default_fontname" : "Arial",
-														"default_fontsize" : 12.0,
 														"description" : "",
 														"digest" : "",
-														"fontface" : 0,
-														"fontname" : "Arial",
-														"fontsize" : 12.0,
 														"globalpatchername" : "",
+														"style" : "",
 														"tags" : ""
 													}
 ,
+													"style" : "",
 													"text" : "p highpass~"
 												}
 
@@ -3034,6 +3239,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
 													"patching_rect" : [ 10.0, 42.0, 36.0, 20.0 ],
+													"style" : "",
 													"text" : "*~ 1."
 												}
 
@@ -3045,7 +3251,8 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 10.0, 252.0, 25.0, 25.0 ]
+													"patching_rect" : [ 10.0, 252.0, 25.0, 25.0 ],
+													"style" : ""
 												}
 
 											}
@@ -3057,7 +3264,8 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 10.0, 12.0, 25.0, 25.0 ]
+													"patching_rect" : [ 10.0, 12.0, 25.0, 25.0 ],
+													"style" : ""
 												}
 
 											}
@@ -3130,18 +3338,14 @@
 ,
 									"patching_rect" : [ 9.0, 69.0, 76.0, 20.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontface" : 0,
-										"default_fontname" : "Arial",
-										"default_fontsize" : 12.0,
 										"description" : "",
 										"digest" : "",
-										"fontface" : 0,
-										"fontname" : "Arial",
-										"fontsize" : 12.0,
 										"globalpatchername" : "",
+										"style" : "",
 										"tags" : ""
 									}
 ,
+									"style" : "",
 									"text" : "p highpass~"
 								}
 
@@ -3156,6 +3360,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 9.0, 42.0, 69.0, 20.0 ],
+									"style" : "",
 									"text" : "*~ 200000."
 								}
 
@@ -3167,7 +3372,8 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 9.0, 99.0, 25.0, 25.0 ]
+									"patching_rect" : [ 9.0, 99.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -3179,7 +3385,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 10.0, 12.0, 25.0, 25.0 ]
+									"patching_rect" : [ 10.0, 12.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -3214,20 +3421,16 @@
  ]
 					}
 ,
-					"patching_rect" : [ 191.0, 501.5, 41.0, 20.0 ],
+					"patching_rect" : [ 191.0, 501.5, 41.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"default_fontsize" : 12.0,
 						"description" : "",
 						"digest" : "",
-						"fontface" : 0,
-						"fontname" : "Arial",
-						"fontsize" : 12.0,
 						"globalpatchername" : "",
+						"style" : "",
 						"tags" : ""
 					}
 ,
+					"style" : "",
 					"text" : "p hp~"
 				}
 
@@ -3235,12 +3438,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
+					"interpinlet" : 1,
 					"maxclass" : "gain~",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 191.0, 501.5, 42.0, 67.0 ]
+					"patching_rect" : [ 191.0, 501.5, 42.0, 67.0 ],
+					"style" : ""
 				}
 
 			}
@@ -3254,9 +3459,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 205.5, 354.0, 195.0, 27.0 ],
+					"patching_rect" : [ 205.5, 354.0, 195.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 473.0, 124.0, 195.0, 27.0 ],
+					"presentation_rect" : [ 473.0, 124.0, 195.0, 29.0 ],
+					"style" : "",
 					"text" : "touch~ t 200. 0.2 0.015"
 				}
 
@@ -3265,7 +3471,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 18.0,
-					"frgb" : 0.0,
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -3274,6 +3479,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 82.0, 136.0, 91.0, 47.0 ],
+					"style" : "",
 					"text" : "Start/stop DSP"
 				}
 
@@ -3288,9 +3494,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 471.5, 354.0, 99.0, 27.0 ],
+					"patching_rect" : [ 471.5, 354.0, 99.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 421.0, 44.0, 99.0, 27.0 ],
+					"presentation_rect" : [ 421.0, 44.0, 99.0, 29.0 ],
+					"style" : "",
 					"text" : "FireFader~"
 				}
 
@@ -3299,12 +3506,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 24.0,
-					"frgb" : 0.0,
 					"id" : "obj-26",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 22.0, 11.0, 262.0, 33.0 ],
+					"style" : "",
 					"text" : "C. Modal synthesis"
 				}
 
@@ -3558,47 +3765,42 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "FireFader~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette",
+				"bootpath" : "~/src/Open-Source-Haptics-For-Artists/Software/Max/palette",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "touch~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "~/src/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "resonator~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "~/src/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "link~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "~/src/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mass~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "~/src/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "grnd~.maxpat",
-				"bootpath" : "/Users/eberdahl/Documents/gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
-				"patcherrelativepath" : "../../../../../gits/Open-Source-Haptics-For-Artists/Software/MaxMSP/palette/CA",
+				"bootpath" : "~/src/Open-Source-Haptics-For-Artists/Software/Max/palette/CA",
 				"type" : "JSON",
 				"implicit" : 1
 			}
- ]
+ ],
+		"autosave" : 0
 	}
 
 }
