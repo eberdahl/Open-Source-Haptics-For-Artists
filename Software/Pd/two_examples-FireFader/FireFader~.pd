@@ -98,7 +98,7 @@ AND CONVERTS TO AND FROM SI UNITS.;
 #X obj 17 168 outlet;
 #X obj 17 56 realtime;
 #X obj 17 77 t f b;
-#X obj 50 100 counter;
+#X obj 50 100 mycounter2;
 #X obj 98 41 loadbang;
 #X obj 50 123 == 0;
 #X obj 17 146 spigot;
